@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sarala&display=swap");
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "sarala", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* ----------------HOME---------------------------- */
+
+.pag1 {
+    background-image: url();
+    height: 80vh;
+    background-size: cover;
+    /* border: solid 1px red; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: flex-end;
+    /* background-color: green; */
+    width: 99.6%;
+    height: 12%;
+    background-color: rgba(59, 148, 59, 0.411);
+    border: solid 3px yellow;
+}
+
+.conteudo video {
+    z-index: -100;
+    width: 100%;
+    /* border: solid 4px orange; */
+}
+
+.color_home {
+    color: yellow !important;
+}
+
+.color_cadastro {
+    color: yellow !important;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    width: 13%;
+    height: 90%;
+    /* border: solid 1px palevioletred;F */
+}
+
+.logo p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: yellow;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    /* border: solid 1px blue; */
+}
+
+.opcoes_navegacao {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    /* border: solid 1px green; */
+}
+
+.opcoes_navegacao a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    line-height: 0.10.5;
+    /* border: solid 1px yellow; */
+}
+
+/* .conteudo p {
+    font-size: 140px;
+    color: green;
+    border: solid 1px olive;
+} */
+
+.conteudo h6 {
+    font-size: 25px;
+    color: yellow;
+    /* border: solid 1px red; */
+}
+
+#botao_topo {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: yellow;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+/* ---------------------SOBRE NÓS------------------------------- */
+
+.pag2 {
+    height: 90vh;
+    border: solid 1px green;
+    /* background-color: black; */
+    background: linear-gradient(180deg, #FFFFFF 26.32%, rgba(68, 151, 17, 0.58) 71.33%);
+}
+
+.titulo_subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15%;
+    line-height: 0.9;
+    color: yellow;
+    /* border: solid 1px yellow; */
+}
+
+.titulo_subtitulo h5 {
+    color: black;
+}
+
+.container-mvv {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    min-height:50vh;
+    color: white;
+    /* border: solid 2px blue; */
+}
+
+.card {
+    background-image: linear-gradient(#333, #333);
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    /* arrow no centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover {
+    background-image: linear-gradient(180deg, #2a5120 0%, #437837 100%);
+}
+
+.card .img {
+    background-image: url(../assets/cervo-missao.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* foto primeiro clara e depois vem o hover */
+    opacity: .7;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    /* ao passar o mouse a imagem cresce e fica com cor */
+    opacity: 1;
+    width: 440px;
+}
+
+.card .img span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card .content {
+    padding: 0 20px;
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    padding: 20px;
+    height: 190px;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin-bottom: 0;
+}
+
+.card .content .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .content .descricao {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .7;
+} 
+
+.card .arrow {
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+/* card 2 */
+
+.card2 {
+    background-image: linear-gradient(#333, #333);
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    /* arrow no centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card2:hover {
+    background-image: linear-gradient(180deg, #2a5120 0%, #437837 100%);
+}
+
+.card2 .img2 {
+    background-image: url(../assets/formiga-visao.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* foto primeiro clara e depois vem o hover */
+    opacity: .7;
+    transition: all .5s;
+}
+
+.card2:hover .img2 {
+    /* ao passar o mouse a imagem cresce e fica com cor */
+    opacity: 1;
+    width: 440px;
+}
+
+.card2 .img2 span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card2 .content2 {
+    padding: 0 20px;
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card2:hover .content2 {
+    padding: 20px;
+    height: 190px;
+    transform: translateY(0);
+}
+
+.card2 .content2 p {
+    margin-bottom: 0;
+}
+
+.card2 .content2 .titulo2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card2 .content2 .descricao2 {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .7;
+} 
+
+.card2 .arrow2 {
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card2:hover .arrow2 {
+    transform: rotate(0);
+}
+
+/* card 3 */
+
+.card3 {
+    background-image: linear-gradient(#333, #333);
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    /* arrow no centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card3:hover {
+    background-image: linear-gradient(180deg, #2a5120 0%, #437837 100%);
+}
+
+.card3 .img3 {
+    background-image: url(../assets/coruja-valores.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* foto primeiro clara e depois vem o hover */
+    opacity: .7;
+    transition: all .5s;
+}
+
+.card3:hover .img3 {
+    /* ao passar o mouse a imagem cresce e fica com cor */
+    opacity: 1;
+    width: 440px;
+}
+
+.card3 .img3 span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card3 .content3 {
+    padding: 0 20px;
+    /* Corta o conteúdo que ultrapassa o tamanho da DIV */
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card3:hover .content3 {
+    padding: 20px;
+    height: 190px;
+    transform: translateY(0);
+}
+
+.card3 .content3 p {
+    margin-bottom: 0;
+}
+
+.card3 .content3 .titulo3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card3 .content3 .descricao3 {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .7;
+} 
+
+.card3 .arrow3 {
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card3:hover .arrow3 {
+    transform: rotate(0);
+}
+
+
+
+/* -----------------ESPÉCIES--------------------------------- */
+
+.pag3 {
+    text-align: center;
+    height: 95vh;
+    /* background-color: rgba(37, 214, 37, 0.5); */
+    border: solid 1px green;
+}
+
+.titulo_subtitulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15%;
+    line-height: 0.9;
+    color: yellow;
+    /* border: solid 1px yellow; */
+}
+
+.titulo_subtitulo2 h5 {
+    color: white;
+}
+
+.frase p {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    font-weight: bold;
+    border: solid 1px orangered;
+}
+
+.saiba_mais {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    color: white;
+    height: 20%;
+    flex-direction: column;
+    /* border: solid 1px orangered; */
+}
+
+.botao_especies {
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.botao_especies:hover {
+    opacity: 0.8;
+    background-color: green;
+    color: white;
+}
+
+/* CAROUSEL */
+
+.slider {
+    margin: 0 auto;
+    width: 190%;
+    height: 400px;
+    /* border-radius: 10px; */
+    /* fazer com que só a primeira apareça */
+    overflow: hidden;
+    /* border: solid 1px blue; */
+}
+
+.embrulho_slider {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    /* border: solid 1px red; */
+}
+
+.slides {
+    width: 440%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    /* ocultar as inputs */
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 650px;
+}
+
+.manual_navegacao {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual_btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* menos no ultimo item(espaçaento de button) */
+.manual_btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual_btn:hover {
+    background-color: yellow;
+}
+
+/* manipulação para saber quando é clicado */
+#radio1:checked~.primeiro {
+    margin-left: 0;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+#radio4:checked~.primeiro {
+    margin-left: -75%;
+}
+
+.navegacao_auto div {
+    border: solid 2px green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navegacao_auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao_auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navegacao_auto .auto_btn1 {
+    background-color: yellow;
+}
+
+#radio2:checked~.navegacao_auto .auto_btn2 {
+    background-color: yellow;
+}
+
+#radio3:checked~.navegacao_auto .auto_btn3 {
+    background-color: yellow;
+}
+
+#radio4:checked~.navegacao_auto .auto_btn4 {
+    background-color: yellow;
+}
+
+
+/* ------------------PRESERVAÇÃO----------------------------------- */
+
+.pag4 {
+    text-align: center;
+    height: 95vh;
+    /* background-color: black; */
+    border: solid 1px green;
+}
+
+.titulo_subtitulo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15%;
+    line-height: 0.9;
+    color: yellow;
+    /* border: solid 1px yellow; */
+}
+
+.titulo_subtitulo3 h5 {
+    color: white;
+}
+
+.borda_video {
+    border-radius: 30px;
+}
+
+.saiba_mais2 h4 {
+    font-size: 30px;
+    color: yellow;
+}
+
+b h5 {
+    font-size: 15px;
+}
+
+.saiba_mais2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    /* border-bottom: 5px solid black; */
+    color: white;
+    /* border: solid 1px orangered; */
+}
+
+.saiba_mais2 b {
+    width: 25%;
+    height: 60%;
+    /* border: solid 1px blue; */
+}
+
+.opcoes_navegacao a {
+    color: white;
+}
+
+.botao_preservacao {
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.botao_preservacao:hover {
+    opacity: 0.8;
+    background-color: green;
+    color: white;
+
+}
+
+.cor_pagina {
+    background: linear-gradient(180deg, #8CC16E 0%, rgba(10, 114, 1, 0.77) 100%);
+}
+
+
+/* -----------------FOOTER------------------------------------------ */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    width: 99.8.5%;
+    height: 25%;
+    border: solid 1px green;
+}

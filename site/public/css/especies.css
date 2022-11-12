@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sarala&display=swap");
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "sarala", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* tela especies */
+
+.container {
+    height: 100vh;
+    background: linear-gradient(180deg, #DAE7D5 0%, rgba(34, 147, 6, 0.72) 100%);
+    /* border: solid 1px red; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    /* border: solid 1px yellow; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 13%;
+    /* border: solid 1px red; */
+}
+
+.logo p {
+    color: yellow;
+}
+
+.opcoes_nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 30%;
+    /* border: solid 1px green; */
+}
+
+.opcoes_nav a {
+    text-decoration: none;
+}
+
+.embrulho_combo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    height: 89%;
+    width: 24%;
+    border-radius: 10px;
+    /* background-color: rgb(69, 67, 67); */
+    /* border: solid 1px green; */
+}
+
+.tela_escolha {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(41, 66, 41);
+    /* border: solid 1px blue; */
+}
+
+.span1 {
+    display: flex;
+    font-size: 25px;
+    color: yellow;
+    /* border: solid 1px blue; */
+}
+
+.combo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25%;
+    text-align: center;
+    /* border: solid 1px orange; */
+}
+
+#lista_animais {
+    width: 100%;
+    background-color: #5c6664;
+    /* border: solid 1px blue; */
+}
+
+#lista_animais::-ms-expand {
+    display: none;
+}
+
+#lista_animais {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+#lista_animais {
+    flex: 1;
+    padding: 0 .5em;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(73, 153, 63);
+}
+
+#lista_animais:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 30%;
+    border: solid 1px blac;
+}
+
+button {
+    font-size: 15px;
+    background-color: yellow;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: green;
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.color_home {
+    color: yellow;
+}
+
+.a {
+    color: white;
+}
+
+/* grafico */
+

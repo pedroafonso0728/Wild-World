@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/especies.css">
+    <title>Wild World</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="./assets/logo (2).png" alt="logo_site" width="55px">
+                <p>WILD WORLD</p>
+            </div>
+
+            <div class="opcoes_nav">
+                <div class="home1"><a class="color_home" href="index.html">Home</a></div>
+                <div><a class="a" href="#especies">Espécies</a></div>
+                <div><a class="a" href="#preservacao">Preservação</a></div>
+            </div>
+        </div>
+
+        <div class="embrulho_combo">
+            <div class="tela_escolha">
+                <span class="span1">Bem vindo, Nome</span>
+                <div class=" combo_box">
+                    <h3>Descubra as diversidades das espécies e suas peculiaridades</h3>
+                    <select id="lista_animais">
+                        <option selected disabled>Animais</option>
+                        <option value="1">Leão</option>
+                        <option value="2">Elefante</option>
+                        <option value="3">Antilope</option>
+                        <option value="4">Tartaruga marinha</option>
+                        <option value="5">Rinoceronte</option>
+                    </select>
+                    <br>
+                </div>
+                <div class="cadastro">
+                    <h4>Cadastre a espécie que você mais gostou e veja quem mais compartilha da sua opnião</h4>
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+        </div>
+        <div class="resultados">
+            <div class="tipo_animal">
+
+            </div>
+    </div>
+    <script src="./js/especies.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div>
+        <canvas id="myChart1" style="position: relative; height:50vh; width:50vw"></canvas>
+    </div>
+</body>
+<script>
+
+    const labels1 = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+
+    ];
+
+    const data1 = {
+        labels: labels1,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255,105,180)',
+            borderColor: 'rgb(255,105,180)',
+            data: [22, 24, 27, 23, 20, 18],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: 'rgb(69, 199, 256)',
+            borderColor: 'rgb(69, 199, 256)',
+            data: [90, 89, 93, 87, 88, 82],
+        }
+        ]
+    };
+
+    const config1 = {
+        type: 'bar',
+        data: data1,
+        options: {}
+    };
+
+    const myChart1 = new Chart(
+        document.getElementById('myChart1'),
+        config1
+    );
+
+</script>
+
+</html>
