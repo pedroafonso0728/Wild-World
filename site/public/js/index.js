@@ -7,7 +7,7 @@ document.getElementById("radio1").checked = true;
 // Quanto tempo será a passagem de cada imagem
 setInterval(function () {
     nextImage();
-}, 3000)
+}, 5000)
 
 function nextImage() {
     contador++;

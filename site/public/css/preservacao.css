@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sarala&display=swap");
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "sarala", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* tela preservacao */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #DAE7D5 0%, rgba(34, 147, 6, 0.72) 100%);
+    /* border: solid 1px red; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    /* border: solid 1px yellow; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 13%;
+    /* border: solid 1px red; */
+}
+
+.logo p {
+    color: yellow;
+}
+
+.opcoes_nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 30%;
+    /* border: solid 1px green; */
+}
+
+.opcoes_nav a {
+    text-decoration: none;
+}
+
+h4 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.color_home {
+    color: yellow;
+}
+
+.a {
+    color: white;
+}
+/* 
+div {
+    overflow:hidden;
+    max-height: 200px;
+    transition: max-height 1s ease-in-out;
+  }
+  
+  div.hide {
+    max-height: 0;
+    pointer-events: none;
+  }
+  
+  #minhaId {
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 0 10px grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 5px;
+    margin: 10px auto;;
+    width: 30%;
+    display: block;
+  }
+  
+  h1,h2{
+    margin: 0;
+    padding:10px;
+  } */

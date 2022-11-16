@@ -14,6 +14,7 @@ body {
 /* tela especies */
 
 .container {
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, #DAE7D5 0%, rgba(34, 147, 6, 0.72) 100%);
     /* border: solid 1px red; */
@@ -23,6 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10%;
     background-color: #000;
     /* border: solid 1px yellow; */
 }
@@ -53,46 +55,439 @@ body {
     text-decoration: none;
 }
 
+.combo_box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50%;
+    /* border: solid 1px orange; */
+}
+
 .embrulho_combo {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 10px;
-    height: 89%;
-    width: 24%;
-    border-radius: 10px;
-    /* background-color: rgb(69, 67, 67); */
-    /* border: solid 1px green; */
+    flex-direction: column;
+    width: 99%;
+    height: 15%;
+    border-bottom: black;
+    /* border: solid 1px orange; */
 }
 
-.tela_escolha {
+.embrulho_select {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    /* border: solid 1px red; */
+}
+
+.cadastro h4 {
+    font-size: 20px;
+    color: black;
+    /* border: solid 1px brown; */
+}
+
+.container_grafico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 74%;
+    /* border: solid 1px orange; */
+}
+
+.grafico {
+    text-align: center;
+    margin: 20px;
+    height: 63%;
+    width: 48%;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+    position: fixed;
+}
+
+.texto_grafico {
+    height: 50%s;
+    /* border: solid 1px blue; */
+}
+
+.texto_boasVindas {
+    /* display: none; */
+    text-align: center;
+    width: 40%;
     height: 80%;
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgb(41, 66, 41);
-    /* border: solid 1px blue; */
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: solid 1px blue;
 }
 
-.span1 {
-    display: flex;
-    font-size: 25px;
-    color: yellow;
-    /* border: solid 1px blue; */
+.embrulhotexto {
+    border: solid 1px red;
 }
 
-.combo_box {
-    display: flex;
-    justify-content: center;
+.embrulho_card1 {
+    /* display: flex; */
+    display: none;
     align-items: center;
     flex-direction: column;
-    height: 25%;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card2 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card3 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card4 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card5 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card6 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card7 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card8 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card9 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card10 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card11 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card12 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card13 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card14 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.embrulho_card15 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    width: 39%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px red; */
+}
+
+.imagem_animal1 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal2 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal3 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal4 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal5 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal6 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal7 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal8 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal9 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal10 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal11 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal12 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal13 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal14 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagem_animal15 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border: solid 1px blue; */
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    /* border: solid 1px blue; */
+}
+
+.imagem_rapido {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    /* border: solid 1px red; */
+}
+
+.imagem_forca {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 48%;
+    flex-direction: column;
+    /* border: solid 1px red; */
+}
+
+.ponto {
+    color: yellow;
+}
+
+.card {
+    border-radius: 15px;
+    height: 70%;
+    border: solid 1px black; 
+}
+
+.texto h2 {
+    color: yellow;
     text-align: center;
-    /* border: solid 1px orange; */
+}
+
+.card h4 {
+    color: black;
+    text-align: center;
 }
 
 #lista_animais {
@@ -129,19 +524,16 @@ body {
 }
 
 .cadastro {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column-reverse;
     text-align: center;
     height: 30%;
-    border: solid 1px blac;
+    /* border: solid 1px black; */
 }
 
 button {
     font-size: 15px;
     background-color: yellow;
     border-radius: 12px;
+    height: 28px;
     cursor: pointer;
     transition-duration: 1s;
 }
@@ -168,5 +560,4 @@ h3 {
     color: white;
 }
 
-/* grafico */
 

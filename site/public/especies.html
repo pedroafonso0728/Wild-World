@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/especies.css">
-    <title>Wild World</title>
+    <link rel="stylesheet" href="../public/css/especies.css">
+    <!-- <script src="../public/js/parte_interna.js"></script> -->
+    <title>Wild World - Espécies</title>
 </head>
 
 <body>
@@ -19,69 +20,683 @@
 
             <div class="opcoes_nav">
                 <div class="home1"><a class="color_home" href="index.html">Home</a></div>
-                <div><a class="a" href="#especies">Espécies</a></div>
-                <div><a class="a" href="#preservacao">Preservação</a></div>
+                <!-- <div><a class="a" href="#especies">Espécies</a></div> -->
+                <div><a class="a" href="preservacao.html">Preservação</a></div>
             </div>
         </div>
-
-        <div class="embrulho_combo">
-            <div class="tela_escolha">
-                <span class="span1">Bem vindo, Nome</span>
-                <div class=" combo_box">
-                    <h3>Descubra as diversidades das espécies e suas peculiaridades</h3>
-                    <select id="lista_animais">
+        <div class=" embrulho_combo">
+            <div class="cadastro">
+                <h4>Cadastre a espécie que você mais gostou e descubra suas curiosidades</h4>
+            </div>
+            <br>
+            <div class="embrulho_select">
+                <div class="combo_box">
+                    <select id="lista_animais" onclick="animais()">
                         <option selected disabled>Animais</option>
-                        <option value="1">Leão</option>
-                        <option value="2">Elefante</option>
-                        <option value="3">Antilope</option>
-                        <option value="4">Tartaruga marinha</option>
-                        <option value="5">Rinoceronte</option>
+                        <option value="leao">Leão</option>
+                        <option value="araraAzul">Arara azul</option>
+                        <option value="ariranha">Ariranha</option>
+                        <option value="elefanteAsiatico">Elefante Asiatico</option>
+                        <option value="micoLeaoDourado">Mico leão dourado</option>
+                        <option value="tubaraoBaleia">Tubarão baleia</option>
+                        <option value="gorilaDaMontanha">Gorila da montanhas</option>
+                        <option value="tartarugaDeCouro">Tartaruga de couro</option>
+                        <option value="antilopeSeiga">Antilope seiga</option>
+                        <option value="orangotango">Orangotango</option>
+                        <option value="rinoceronte">Rinoceronte</option>
+                        <option value="loboGuara">Lobo guará</option>
+                        <option value="tartarugaMarinha">Tartaruga marinha</option>
+                        <option value="AraraAzul">Macaco narigudo</option>
+                        <option value="tigreDeBengala">Tigre de bengala</option>
                     </select>
-                    <br>
                 </div>
-                <div class="cadastro">
-                    <h4>Cadastre a espécie que você mais gostou e veja quem mais compartilha da sua opnião</h4>
-                    <button>Cadastrar</button>
+                <button>Cadastrar</button>
+            </div>
+        </div>
+
+        <div class="container_grafico">
+            <div class="grafico">
+                <section>
+                    <span class="texto_grafico">Seu animal escolhido foi o leão! um animal simplismente fantastico,
+                        não ?
+                        como pode ver, muitas pessoas compartilham do mesmo pensamento que você.
+                    </span>
+                    <br><br>
+                    <canvas id="myChart1"></canvas>
+                </section>
+            </div>
+            <div class="linha_centro">
+
+            </div>
+
+
+            <div class="texto_boasVindas" id="texto">
+                <div class="embrulhotexto">
+                    <h1>Seja bem vindo, Nome</h1>
+                    <p>Otima escolha ter se cadastrado e se tornado parte dessa grande familia!
+                        Aqui você pode cadastrar um animal que você mais tem curiosidade de saber sobre ele, tamém vai
+                        conseguir acompanhar quantas pessoas tem o mesmo interesse que você.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="embrulho_card1" id="leao">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal1">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card2" id="araraAzul">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/fraco.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal2">
+                        <img src="../public/assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card3" id="ariranha">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal3">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card4" id="elefanteAsiatico">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal4">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card5" id="micoLeaoDourado">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal5">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card6" id="tubaraoBaleia">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal6">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card7" id="gorilaDaMontanha">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal7">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card8" id="tartarugaDeCouro">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal8">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card9" id="antilopeSeiga">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal9">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card10" id="orangotango">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal10">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card11" id="rinoceronte">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal11">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card12" id="loboGuara">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal12">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card13" id="tartarugaMarinha">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal13">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card14" id="macacoNarigudo">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal14">
+                        <img src="./assets/macaco-narigudo.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card15" id="tigreDeBengala">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal15">
+                        <img src="./assets/leao.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Macaco narigudo</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <li>Ordem: Primata.</li>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                        </p>
+                        </P>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="resultados">
-            <div class="tipo_animal">
-
-            </div>
     </div>
     <script src="./js/especies.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <div>
-        <canvas id="myChart1" style="position: relative; height:50vh; width:50vw"></canvas>
     </div>
 </body>
 <script>
 
     const labels1 = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-
+        'Leão',
+        'Arara azul',
+        'Ariranha',
+        'Elefante Asiatico',
+        'Mico leão dourado',
+        'Tubarão baleia',
+        'Gorila das montanhas',
+        'Tartaruga de couro',
+        'Antilope seiga',
+        'Orangotango',
+        'Rinoceronte',
+        'Lobo guará',
+        'Tartaruga marinha',
+        'Macaco narigudo',
+        'Tigre de bengala',
     ];
 
     const data1 = {
         labels: labels1,
         datasets: [{
-            label: 'Temperatura',
-            backgroundColor: 'rgb(255,105,180)',
-            borderColor: 'rgb(255,105,180)',
-            data: [22, 24, 27, 23, 20, 18],
+            label: 'Animais mais votados',
+            backgroundColor: 'rgb(252, 245, 95)',
+            borderColor: 'rgb(0, 0, 0)',
+            data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25],
         },
-        {
-            label: 'Umidade',
-            backgroundColor: 'rgb(69, 199, 256)',
-            borderColor: 'rgb(69, 199, 256)',
-            data: [90, 89, 93, 87, 88, 82],
-        }
         ]
     };
 
