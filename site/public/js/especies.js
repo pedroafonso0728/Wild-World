@@ -18,7 +18,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'araraAzul') {
@@ -37,7 +37,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'ariranha') {
@@ -56,7 +56,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'elefanteAsiatico') {
@@ -75,7 +75,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'micoLeaoDourado') {
@@ -94,7 +94,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'tubaraoBaleia') {
@@ -113,7 +113,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'gorilaDaMontanha') {
@@ -132,7 +132,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'tartarugaDeCouro') {
@@ -151,7 +151,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'antilopeSeiga') {
@@ -170,7 +170,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'orangotango') {
@@ -189,7 +189,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'rinoceronte') {
@@ -208,7 +208,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'loboGuara') {
@@ -227,7 +227,7 @@ function animais() {
         loboGuara.style.display = 'block'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'tartarugaMarinha') {
@@ -246,7 +246,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'block'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
     else if (animais == 'macacoNarigudo') {
@@ -265,10 +265,10 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'block'
-        tigreDeBengala.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
     }
 
-    else if (animais == 'tigreDeBengala') {
+    else if (animais == 'aguiaCinzenta') {
         texto.style.display = 'none'
         leao.style.display = 'none'
         araraAzul.style.display = 'none'
@@ -284,7 +284,7 @@ function animais() {
         loboGuara.style.display = 'none'
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
-        tigreDeBengala.style.display = 'block'
+        aguiaCinzenta.style.display = 'block'
     }
 
 }

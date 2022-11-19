@@ -10,20 +10,324 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="logo">
-                <img src="./assets/logo (2).png" alt="logo_site" width="55px">
-                <p>WILD WORLD</p>
+
+    <div class="pg1">
+        <div class="painel">
+            <div class="logo_painel">
+                <img src="./assets/logo (2).png">
+            </div>
+            <div class="boas_vindas">
+                <div class="ola" style="float:left; width: 30%;">Olá,</div>
+                <div id="div_puxar_nome">Samuel.</div>
+                <div>Seja bem vindo!</div>
+            </div>
+            <div class="opçoes_painel">
+
+                <div class="opçoes1" id="id_mural" onclick="mural()">
+                    <div class="topico3"></div>
+                    <div class="opçao3">Principais espécies em extinção</div>
+                </div>
+                <div class="opçoes2" id="id_trilha" onclick="trilha()">
+                    <div class="topico"></div>
+                    <div class="opçao1">O que é ? Qual a importância da preservação ?</div>
+                </div>
+                <div class="opçoes3" id="id_grafico" onclick="grafico()">
+                    <div class="topico"></div>
+                    <div class="opçao2">Grafico de especialidades</div>
+                </div>
+            </div>
+            <div class="botao_sair">
+                <a href="index.html"><button onclick="sair()">Sair</button></a>
             </div>
 
-            <div class="opcoes_nav">
-                <div class="home1"><a class="color_home" href="index.html">Home</a></div>
-                <div><a class="a" href="parte_interna.html">Espécies</a></div>
+        </div>
+        <div class="conteudo">
+
+
+            <div class="container_conteudo conteudo0" id="seleçao_mural" style="display:flex;">
+                <div class="enunciado">
+                    <div class="texto_enunciado">
+                        <div>Mural de especialidades</div>
+                    </div>
+                    
+                    <div class="saibamais"> <a href="https://www.nationalgeographicbrasil.com/search?q=animais">Saiba mais</a></div>
+                    
+                </div>
+
+                   <br>
+                <div class="container_mural_especialidades">
+                    <div class="horizontal">
+                        <div class="quadrado">
+                            <img src="./assets/leao-foto.jpg">
+                            <div>Leão</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/arara-foto.jpg">
+                            <div>Arara azul</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/ariranha-foto.jpg">
+                            <div>Ariranha</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/elefante-foto.jpg">
+                            <div>Elefante asiatico</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/mico-foto.jpg">
+                            <div>Mico leão dourado</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/tubaBaleia-foto.jpg">
+                            <div>Ttubarão baleia</div>
+                        </div>
+                    </div>
+                       <br><br>
+                    <div class="horizontal">
+                        <div class="quadrado">
+                            <img src="./assets/gorila-foto.jpg">
+                            <div>Gorila</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/tartaCouro-foto.jpg">
+                            <div>Tartaruga de couro</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/antilope_saiga-foto.jpg">
+                            <div>Antilope seiga</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/orangotango.jpg">
+                            <div>Orangotango</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/rino-foto.jpg">
+                            <div>Rinoceronte Indiano</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/rino-foto.jpg">
+                            <div>iajdoiajs</div>
+                        </div>
+                    </div>
+                      <br><br><br>
+                    <div class="horizontal">
+                        <div class="quadrado">
+                            <img src="./assets/loboGuara-foto.jpg">
+                            <div>Lobo guará</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/tartaruga.jpg">
+                            <div>Tartaruga marinha</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/macaco-narigudo.jpg">
+                            <div>Macaco narigudo</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="./assets/aguiaCin-foto.jpg">
+                            <div>Águia cinzenta</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="css/imgs/especialidades/sementes.png">
+                            <div>Sementes</div>
+                        </div>
+                        <div class="quadrado">
+                            <img src="css/imgs/especialidades/sementes.png">
+                            <div>Sementes</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+            <div class="container_conteudo conteudo1" id="seleçao_trilha" style="display:none" ;>
+                <div class="enunciado">
+                    <div class="texto_enunciado">
+                        <div style="margin-left: 5%;">Cadastre a especialidade concluida e </div>
+                        <div style="margin-left: 5%;">atualize seu desempenho nas classes.</div>
+                    </div>
+                    <div class="opçoes">
+                        <select id="select_especialidade">
+                            <option selected disabled>Escolha</option>
+                            <option value="1">Cães</option>
+                            <option value="2">Fogueiras</option>
+                            <option value="3">Pioneiria</option>
+                            <option value="4">Computação</option>
+                            <option value="5">Ecologia</option>
+                            <option value="6">Temperança</option>
+                            <option value="7">Coração</option>
+                            <option value="8">Felinos</option>
+                            <option value="9">Escultura</option>
+                            <option value="10">Tubarões</option>
+                            <option value="11">Nós</option>
+                            <option value="12">Acampamento</option>
+                            <option value="13">Mordomia</option>
+                            <option value="14">Aves</option>
+                            <option value="15">Répteis</option>
+                            <option value="16">Orçamento</option>
+                            <option value="17">Excurcionismo</option>
+                            <option value="18">Libras</option>
+                            <option value="19">Astronimia</option>
+                            <option value="20">Cidadania</option>
+                            <option value="21">Braile</option>
+                            <option value="22">Ciclismo</option>
+                            <option value="23">Culinaria</option>
+                            <option value="24">Digestão</option>
+                            <option value="25">Insetos</option>
+                            <option value="26">Física</option>
+                            <option value="27">pacíficador</option>
+                            <option value="28">Sementes</option>
+                        </select>
+                        <button onclick="cadastrar_especialidade()">Cadastrar</button>
+                    </div>
+                </div>
+                <div class="classes_cima">
+                    <div class="container_classes">
+                        <div class=" teste foto_1">
+                            <div class="porcentagem" id="div_porcent_amigo">0%</div>
+                        </div>
+                        <div class="texto">Amigo</div>
+                    </div>
+                    <div class="container_classes">
+                        <div class="teste foto_2">
+                            <div class="porcentagem" id="div_porcent_companheiro">0%</div>
+                        </div>
+                        <div class="texto">Companheiro</div>
+                    </div>
+                    <div class="container_classes">
+                        <div class="teste foto_3">
+                            <div class="porcentagem" id="div_porcent_pesquisador">0%</div>
+                        </div>
+                        <div class="texto">Pesquisador</div>
+                    </div>
+                </div>
+                <div class="classes_baixo">
+                    <div class="container_classes">
+                        <div class=" teste foto_4">
+                            <div class="porcentagem" id="div_porcent_pioneiro">0%</div>
+                        </div>
+                        <div class="texto">Pioneiro</div>
+                    </div>
+                    <div class="container_classes">
+                        <div class=" teste foto_5">
+                            <div class="porcentagem" id="div_porcent_excurcionista">0%</div>
+                        </div>
+                        <div class="texto">Excurcionista</div>
+                    </div>
+                    <div class="container_classes">
+                        <div class="teste foto_6">
+                            <div class="porcentagem" id="div_porcent_guia">0%</div>
+                        </div>
+                        <div class="texto">Guia</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_conteudo conteudo2" id="seleçao_grafico" style="display:none;">
+                <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div>
+                <div class="analitics">
+                    <div class="metrica facil">
+                        <div>10</div>
+                        <div class="nivel">Fácil</div>
+                    </div>
+                    <div class="metrica medio">
+                        <div>11 a 15</div>
+                        <div class="nivel">Médio</div>
+                    </div>
+                    <div class="metrica dificil">
+                        <div>16</div>
+                        <div class="nivel">Difícil</div>
+                    </div>
+                </div>
+                <div class="conteudo_grafico">
+                    <div class="container_select">Tipo de grafico:
+                        <select id="select_grafico" onchange="grafico()">
+                            <option value="barra">Quantitativo</option>
+                            <option value="percentual">Percentual</option>
+                        </select>
+                    </div>
+                    <div class="container_grafico1" id="seleçao_barra">
+                        <canvas id="myChart1" class="canvas1"></canvas>
+                    </div>
+                    <div class="container_grafico2" id="seleçao_porcentagem">
+                        <div id='piechart' style="height:  auto; width: auto;  "></div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
     </div>
-    <!-- <script src="../public/js/parte_interna.js"></script> -->
+
+
+
+
+
+    <!-- <div class="container">
+       
+        <div class="conteudo">
+            <div class="barra_lateral">
+                <div class="opcoes_barra">
+                    <div class="especie">
+                        O que é ? Qual a importância da preservação ?
+                    </div>
+                    <div class="preservacao">
+                        Principais espécies em extinção
+                    </div>
+                </div>
+            </div>
+            <div class="especies">
+                <div class="foto1">
+                    <img class="img1" src="./assets/leao-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto2">
+                    <img class="img2" src="./assets/arara-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto3">
+                    <img class="img3" src="./assets/ariranha-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto4">
+                    <img class="img4" src="./assets/elefante-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto5">
+                    <img class="img5" src="./assets/mico-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto6">
+                    <img class="img6" src="./assets/tubaBaleia-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto7">
+                    <img class="img7" src="./assets/gorila-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto8">
+                    <img class="img8" src="./assets/tartaCouro-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto9">
+                    <img class="img9" src="./assets/antilope_saiga-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto10">
+                    <img class="img10" src="./assets/orangotango.jpg" width="60px" alt="">
+                </div>
+                <div class="foto11">
+                    <img class="img11" src="./assets/rino-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto12">
+                    <img class="img12" src="./assets/loboGuara-foto.jpg" width="60px" alt="">
+                </div>
+                <div class="foto13">
+                    <img class="img13" src="./assets/tartaruga.jpg" width="60px" alt="">
+                </div>
+                <div class="foto14">
+                    <img class="img14" src="./assets/macaco-narigudo.jpg" width="60px" alt="">
+                </div>
+                <div class="foto15">
+                    <img class="img15" src="./assets/aguiaCin-foto.jpg" width="60px" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="./js/parte_interna.js"></script>
 </body>
 
 </html>
