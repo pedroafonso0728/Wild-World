@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild World - Preservação</title>
     <link rel="stylesheet" href="../public/css/preservacao.css">
+    <link rel="stylesheet" href="./css/especies.css">
 </head>
 
 <body>
@@ -18,240 +19,1039 @@
             </div>
             <div class="boas_vindas">
                 <div class="ola" style="float:left; width: 30%;">Olá,</div>
-                <div id="div_puxar_nome">Samuel.</div>
+                <div id="div_puxar_nome">Pedro.</div>
                 <div>Seja bem vindo!</div>
             </div>
             <div class="opçoes_painel">
 
-                <div class="opçoes1" id="id_mural" onclick="mural()">
+                <div class="opçoes1" id="id_boasvindas" onclick="boasVindas()">
                     <div class="topico3"></div>
                     <div class="opçao3">Principais espécies em extinção</div>
                 </div>
-                <div class="opçoes2" id="id_trilha" onclick="trilha()">
+                <div class="opçoes2" id="id_especiesext" onclick="animaisext()">
                     <div class="topico"></div>
                     <div class="opçao1">O que é ? Qual a importância da preservação ?</div>
                 </div>
                 <div class="opçoes3" id="id_grafico" onclick="grafico()">
                     <div class="topico"></div>
-                    <div class="opçao2">Grafico de especialidades</div>
+                    <div class="opçao2">Grafico</div>
                 </div>
             </div>
             <div class="botao_sair">
-                <a href="index.html"><button onclick="sair()">Sair</button></a>
+                <a href="index.html"><button class="saibamais" onclick="sair()">Sair</button></a>
             </div>
 
         </div>
+
+
+
         <div class="conteudo">
 
 
-            <div class="container_conteudo conteudo0" id="seleçao_mural" style="display:flex;">
-                <div class="enunciado">
-                    <div class="texto_enunciado">
-                        <div>Mural de especialidades</div>
+            
+
+            <div class="container_conteudo conteudo1" id="seleçao_boasVindas" style="display:none" ;>
+                    <div class=" embrulho_combo">
+                        <br>
+                        <div class="embrulho_select">
+                            <div class="logo">
+                                <img src="./assets/logo (2).png" alt="logo_site" width="55px">
+                            </div>
+                            <div class="combo_box">
+                                <h4>Cadastre a espécie que você mais gostou e <br>descubra suas curiosidades</h4>
+                                <br>
+                                <div class="seleCadas">
+                                    <select id="lista_animais" onclick="animais()">
+                                        <option selected disabled>Animais</option>
+                                        <option value="leao">Leão</option>
+                                        <option value="araraAzul">Arara azul</option>
+                                        <option value="ariranha">Ariranha</option>
+                                        <option value="elefanteAsiatico">Elefante Asiatico</option>
+                                        <option value="micoLeaoDourado">Mico leão dourado</option>
+                                        <option value="tubaraoBaleia">Tubarão baleia</option>
+                                        <option value="gorilaDaMontanha">Gorila da montanhas</option>
+                                        <option value="tartarugaDeCouro">Tartaruga de couro</option>
+                                        <option value="antilopeSeiga">Antilope seiga</option>
+                                        <option value="orangotango">Orangotango</option>
+                                        <option value="rinoceronte">Rinoceronte</option>
+                                        <option value="loboGuara">Lobo guará</option>
+                                        <option value="tartarugaMarinha">Tartaruga marinha</option>
+                                        <option value="macacoNarigudo">Macaco narigudo</option>
+                                        <option value="aguiaCinzenta">Aguia cinzenta</option>
+                                        <option value="oncaPintada">Onça pintada</option>
+                                        <option value="tigre">Tigre siberiano</option>
+                                        <option value="jiboiaAmarela">Jiboia amarela</option>
+                                    </select>
+                                    <div class="btn_especie">
+                                        <button>Cadastrar</button>
+                                    </div>
+                                </div>
+                                <div class="redirecionamento">
+                                    <div class="embrulho_saibaMais">
+                                        <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button>Saiba
+                                                mais</button></a>
+                                    </div>
+                                    <div class="home"><a style="color: black; text-decoration: none; font-size: 20px;"
+                                            href="./preservacao.html">Preservação</a></div>
+                                    <div class="home"><a style="color: yellow; text-decoration: none; font-size: 20px;"
+                                            href="index.html">Home</a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+            
+                    <div class="container_grafico">
+                        <div class="grafico">
+                            <section>
+                                <span class="texto_grafico"><br>Seu animal escolhido foi o leão! um animal simplismente fantastico,
+                                    não ?
+                                    como pode ver, muitas pessoas compartilham do mesmo pensamento que você.
+                                </span>
+                                <br><br>
+                                <canvas id="myChart1"></canvas>
+                            </section>
+                        </div>
+                        <div class="linha_centro">
+            
+                        </div>
+            
+            
+                        <div class="texto_boasVindas" id="texto">
+                            <div class="embrulhotexto">
+                                <h1>Seja bem vindo(a), Nome</h1>
+                                <br>
+                                <p>Otima escolha ter se cadastrado e se tornado parte dessa grande familia!
+                                    Aqui você pode escolher um animal e saber diversas coisas sobre ele e suas curiosidades, além de
+                                    conseguir cadastra-lo e visualizar quantas pessoas escolheram o mesmo animal que você.
+                                </p>
+                            </div>
+                        </div>
+            
+                        <div class="embrulho_card1" id="leao">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal1">
+                                    <img src="./assets/leao-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Leão</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card2" id="araraAzul">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/fraco.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal2">
+                                    <img src="../public/assets/arara-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Arara azul</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card3" id="ariranha">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/fraco.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal3">
+                                    <img src="./assets/ariranha-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Ariranha</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card4" id="elefanteAsiatico">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal4">
+                                    <img src="./assets/elefante-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/lesma.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Elefante asiatico</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card5" id="micoLeaoDourado">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/fraco.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal5">
+                                    <img src="./assets/mico-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Mico leão dourado</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card6" id="tubaraoBaleia">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal6">
+                                    <img src="./assets/tubaBaleia-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Tubarão baleia</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card7" id="gorilaDaMontanha">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal7">
+                                    <img src="./assets/gorila-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Gorila da montanha</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card8" id="tartarugaDeCouro">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal8">
+                                    <img src="./assets/tartaCouro-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/lesma.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Tartaruga de couro</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card9" id="antilopeSeiga">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal9">
+                                    <img src="./assets/antilope_saiga-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Antilope seiga</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card10" id="orangotango">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal10">
+                                    <img src="./assets/orangotango.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Orangotango</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card11" id="rinoceronte">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal11">
+                                    <img src="./assets/rino-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Rinoceronte</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card12" id="loboGuara">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal12">
+                                    <img src="./assets/loboGuara-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Lobo guará</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card13" id="tartarugaMarinha">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/fraco.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal13">
+                                    <img src="./assets/tartaruga.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/lesma.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Tartaruga marinha</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card14" id="macacoNarigudo">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/fraco.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal14">
+                                    <img src="./assets/macaco-narigudo.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Macaco narigudo</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>peso/Altura: Podem chegar de 60 a 70 cm de altura e chegar ao peso de até 23 kg (as
+                                            fêmeas
+                                            não pesam o mesmo valor, seu peso é inferior ao peso dos machos).</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card15" id="aguiaCinzenta">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal15">
+                                    <img src="./assets/aguiaCin-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Aguia cinzenta</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        
+            
+                        <div class="embrulho_card16" id="oncaPintada">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal16">
+                                    <img src="./assets/oncapintada-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Onça pintada</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="embrulho_card17" id="tigre">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal17">
+                                    <img src="./assets/tigre-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Tigre siberiano</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
                     
-                    <div class="saibamais"> <a href="https://www.nationalgeographicbrasil.com/search?q=animais">Saiba mais</a></div>
-                    
-                </div>
-
-                   <br>
-                <div class="container_mural_especialidades">
-                    <div class="horizontal">
-                        <div class="quadrado">
-                            <img src="./assets/leao-foto.jpg">
-                            <div>Leão</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/arara-foto.jpg">
-                            <div>Arara azul</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/ariranha-foto.jpg">
-                            <div>Ariranha</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/elefante-foto.jpg">
-                            <div>Elefante asiatico</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/mico-foto.jpg">
-                            <div>Mico leão dourado</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/tubaBaleia-foto.jpg">
-                            <div>Ttubarão baleia</div>
-                        </div>
-                    </div>
-                       <br><br>
-                    <div class="horizontal">
-                        <div class="quadrado">
-                            <img src="./assets/gorila-foto.jpg">
-                            <div>Gorila</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/tartaCouro-foto.jpg">
-                            <div>Tartaruga de couro</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/antilope_saiga-foto.jpg">
-                            <div>Antilope seiga</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/orangotango.jpg">
-                            <div>Orangotango</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/rino-foto.jpg">
-                            <div>Rinoceronte Indiano</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/rino-foto.jpg">
-                            <div>iajdoiajs</div>
+                        <div class="embrulho_card18" id="jiboiaAmarela">
+                            <div class="imagens">
+                                <div class="imagem_forca">
+                                    Força:
+                                    <img src="./assets/forca.png" width="40px" alt="">
+                                </div>
+                                <div class="imagem_animal18">
+                                    <img src="./assets/jiboia-foto.jpg" alt="">
+                                </div>
+                                <div class="imagem_rapido">
+                                    Velocidade:
+                                    <img src="./assets/velocidade.png" width="43px" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="texto">
+                                    <h2 class="texto_card">Jiboia amarela</h2>
+                                    <P>
+                                    <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                                        tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                                    <p class="desc">
+                                        <li>Nome ciêntifico: Nasalis larvatus.</li>
+                                        <br>
+                                        <li>Ordem: Primata.</li>
+                                        <br>
+                                        <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                                        <br>
+                                        <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                                        <br>
+                                        <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                            idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                                        <br>
+                                        <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                            acasalamento que
+                                            sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                                        <br>
+                                    </p>
+                                    </P>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                      <br><br><br>
-                    <div class="horizontal">
-                        <div class="quadrado">
-                            <img src="./assets/loboGuara-foto.jpg">
-                            <div>Lobo guará</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/tartaruga.jpg">
-                            <div>Tartaruga marinha</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/macaco-narigudo.jpg">
-                            <div>Macaco narigudo</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="./assets/aguiaCin-foto.jpg">
-                            <div>Águia cinzenta</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="css/imgs/especialidades/sementes.png">
-                            <div>Sementes</div>
-                        </div>
-                        <div class="quadrado">
-                            <img src="css/imgs/especialidades/sementes.png">
-                            <div>Sementes</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
 
 
-            <div class="container_conteudo conteudo1" id="seleçao_trilha" style="display:none" ;>
-                <div class="enunciado">
-                    <div class="texto_enunciado">
-                        <div style="margin-left: 5%;">Cadastre a especialidade concluida e </div>
-                        <div style="margin-left: 5%;">atualize seu desempenho nas classes.</div>
-                    </div>
-                    <div class="opçoes">
-                        <select id="select_especialidade">
-                            <option selected disabled>Escolha</option>
-                            <option value="1">Cães</option>
-                            <option value="2">Fogueiras</option>
-                            <option value="3">Pioneiria</option>
-                            <option value="4">Computação</option>
-                            <option value="5">Ecologia</option>
-                            <option value="6">Temperança</option>
-                            <option value="7">Coração</option>
-                            <option value="8">Felinos</option>
-                            <option value="9">Escultura</option>
-                            <option value="10">Tubarões</option>
-                            <option value="11">Nós</option>
-                            <option value="12">Acampamento</option>
-                            <option value="13">Mordomia</option>
-                            <option value="14">Aves</option>
-                            <option value="15">Répteis</option>
-                            <option value="16">Orçamento</option>
-                            <option value="17">Excurcionismo</option>
-                            <option value="18">Libras</option>
-                            <option value="19">Astronimia</option>
-                            <option value="20">Cidadania</option>
-                            <option value="21">Braile</option>
-                            <option value="22">Ciclismo</option>
-                            <option value="23">Culinaria</option>
-                            <option value="24">Digestão</option>
-                            <option value="25">Insetos</option>
-                            <option value="26">Física</option>
-                            <option value="27">pacíficador</option>
-                            <option value="28">Sementes</option>
-                        </select>
-                        <button onclick="cadastrar_especialidade()">Cadastrar</button>
-                    </div>
-                </div>
-                <div class="classes_cima">
-                    <div class="container_classes">
-                        <div class=" teste foto_1">
-                            <div class="porcentagem" id="div_porcent_amigo">0%</div>
+
+                    <div class="container_conteudo conteudo0" id="seleçao_especiesext" style="display:flex;">
+                        <div class="enunciado">
+                            <div class="texto_enunciado">
+                                <div>Espécies em extinção</div>
+                            </div>
+        
+                            <div class="saibamais"><a href="https://www.todamateria.com.br/animais-em-extincao/">Saiba mais</a>
+                            </div>
+        
                         </div>
-                        <div class="texto">Amigo</div>
-                    </div>
-                    <div class="container_classes">
-                        <div class="teste foto_2">
-                            <div class="porcentagem" id="div_porcent_companheiro">0%</div>
+        
+                        <br>
+                        <div class="container_mural_especialidades">
+                            <div class="horizontal">
+                                <div class="quadrado">
+                                    <img class="img1" src="./assets/leao-foto.jpg">
+                                    <div>Leão</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img2" src="./assets/arara-foto.jpg">
+                                    <div>Arara azul</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img3" src="./assets/ariranha-foto.jpg">
+                                    <div>Ariranha</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img4" src="./assets/elefante-foto.jpg">
+                                    <div>Elefante asiatico</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img5" src="./assets/mico-foto.jpg">
+                                    <div>Mico leão dourado</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img6" src="./assets/tubaBaleia-foto.jpg">
+                                    <div>Ttubarão baleia</div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="horizontal">
+                                <div class="quadrado">
+                                    <img class="img7" src="./assets/gorila-foto.jpg">
+                                    <div>Gorila</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img8" src="./assets/tartaCouro-foto.jpg">
+                                    <div>Tartaruga de couro</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img9" src="./assets/antilope_saiga-foto.jpg">
+                                    <div>Antilope seiga</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img10" src="./assets/orangotango.jpg">
+                                    <div>Orangotango</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img11" src="./assets/rino-foto.jpg">
+                                    <div>Rinoceronte Indiano</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img12" src="./assets/loboGuara-foto.jpg">
+                                    <div>Lobo guara</div>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="horizontal">
+                                <div class="quadrado">
+                                    <img class="img13" src="./assets/tartaruga.jpg">
+                                    <div>Tartaruga marinha</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img14" src="./assets/macaco-narigudo.jpg">
+                                    <div>Macaco narigudo</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img15" src="./assets/aguiaCin-foto.jpg">
+                                    <div>Águia cinzenta</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img16" src="./assets/oncapintada-foto.jpg">
+                                    <div>Onça pintada</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img17" src="./assets/tigre-foto.jpg">
+                                    <div>Tigre siberiano</div>
+                                </div>
+                                <div class="quadrado">
+                                    <img class="img18" src="./assets/jiboia-foto.jpg">
+                                    <div>Jiboia amarela</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="texto">Companheiro</div>
                     </div>
-                    <div class="container_classes">
-                        <div class="teste foto_3">
-                            <div class="porcentagem" id="div_porcent_pesquisador">0%</div>
-                        </div>
-                        <div class="texto">Pesquisador</div>
-                    </div>
-                </div>
-                <div class="classes_baixo">
-                    <div class="container_classes">
-                        <div class=" teste foto_4">
-                            <div class="porcentagem" id="div_porcent_pioneiro">0%</div>
-                        </div>
-                        <div class="texto">Pioneiro</div>
-                    </div>
-                    <div class="container_classes">
-                        <div class=" teste foto_5">
-                            <div class="porcentagem" id="div_porcent_excurcionista">0%</div>
-                        </div>
-                        <div class="texto">Excurcionista</div>
-                    </div>
-                    <div class="container_classes">
-                        <div class="teste foto_6">
-                            <div class="porcentagem" id="div_porcent_guia">0%</div>
-                        </div>
-                        <div class="texto">Guia</div>
-                    </div>
-                </div>
-            </div>
+
+
+
 
             <div class="container_conteudo conteudo2" id="seleçao_grafico" style="display:none;">
-                <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div>
+                <!-- <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div> -->
                 <div class="analitics">
                     <div class="metrica facil">
                         <div>10</div>
-                        <div class="nivel">Fácil</div>
+                        <!-- <div class="nivel">Fácil</div> -->
                     </div>
                     <div class="metrica medio">
                         <div>11 a 15</div>
-                        <div class="nivel">Médio</div>
+                        <!-- <div class="nivel">Médio</div> -->
                     </div>
                     <div class="metrica dificil">
                         <div>16</div>
-                        <div class="nivel">Difícil</div>
+                        <!-- <div class="nivel">Difícil</div> -->
                     </div>
                 </div>
                 <div class="conteudo_grafico">
                     <div class="container_select">Tipo de grafico:
                         <select id="select_grafico" onchange="grafico()">
-                            <option value="barra">Quantitativo</option>
-                            <option value="percentual">Percentual</option>
+                            <!-- <option value="barra">Quantitativo</option> -->
+                            <!-- <option value="percentual">Percentual</option> -->
                         </select>
                     </div>
                     <div class="container_grafico1" id="seleçao_barra">
                         <canvas id="myChart1" class="canvas1"></canvas>
                     </div>
                     <div class="container_grafico2" id="seleçao_porcentagem">
-                        <div id='piechart' style="height:  auto; width: auto;  "></div>
+                        <div id='piechart' style="height:  auto; width: auto;"></div>
                     </div>
                 </div>
 
@@ -261,73 +1061,54 @@
         </div>
     </div>
 
-
-
-
-
-    <!-- <div class="container">
-       
-        <div class="conteudo">
-            <div class="barra_lateral">
-                <div class="opcoes_barra">
-                    <div class="especie">
-                        O que é ? Qual a importância da preservação ?
-                    </div>
-                    <div class="preservacao">
-                        Principais espécies em extinção
-                    </div>
-                </div>
-            </div>
-            <div class="especies">
-                <div class="foto1">
-                    <img class="img1" src="./assets/leao-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto2">
-                    <img class="img2" src="./assets/arara-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto3">
-                    <img class="img3" src="./assets/ariranha-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto4">
-                    <img class="img4" src="./assets/elefante-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto5">
-                    <img class="img5" src="./assets/mico-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto6">
-                    <img class="img6" src="./assets/tubaBaleia-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto7">
-                    <img class="img7" src="./assets/gorila-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto8">
-                    <img class="img8" src="./assets/tartaCouro-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto9">
-                    <img class="img9" src="./assets/antilope_saiga-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto10">
-                    <img class="img10" src="./assets/orangotango.jpg" width="60px" alt="">
-                </div>
-                <div class="foto11">
-                    <img class="img11" src="./assets/rino-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto12">
-                    <img class="img12" src="./assets/loboGuara-foto.jpg" width="60px" alt="">
-                </div>
-                <div class="foto13">
-                    <img class="img13" src="./assets/tartaruga.jpg" width="60px" alt="">
-                </div>
-                <div class="foto14">
-                    <img class="img14" src="./assets/macaco-narigudo.jpg" width="60px" alt="">
-                </div>
-                <div class="foto15">
-                    <img class="img15" src="./assets/aguiaCin-foto.jpg" width="60px" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
     <script src="./js/parte_interna.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
+<script>
+
+    const labels1 = [
+        'Leão',
+        'Arara azul',
+        'Ariranha',
+        'Elefante Asiatico',
+        'Mico leão dourado',
+        'Tubarão baleia',
+        'Gorila das montanhas',
+        'Tartaruga de couro',
+        'Antilope seiga',
+        'Orangotango',
+        'Rinoceronte',
+        'Lobo guará',
+        'Tartaruga marinha',
+        'Macaco narigudo',
+        'Águia cinzenta',
+        'Onça pintada',
+        'Tigre siberiano',
+        'Jiboia amarela',
+    ];
+
+    const data1 = {
+        labels: labels1,
+        datasets: [{
+            label: 'Animais mais escolhidos',
+            backgroundColor: 'rgb(252, 245, 95)',
+            borderColor: 'rgb(0, 0, 0)',
+            data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25, 50, 25, 33],
+        },
+        ]
+    };
+
+    const config1 = {
+        type: 'bar',
+        data: data1,
+        options: {}
+    };
+
+    const myChart1 = new Chart(
+        document.getElementById('myChart1'),
+        config1
+    );
+
+</script>
 </html>

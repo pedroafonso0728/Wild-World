@@ -1,7 +1,8 @@
 
+
 function animais() {
     var animais = lista_animais.value;
-
+    
     if (animais == 'leao') {
         texto.style.display = 'none'
         leao.style.display = 'block'
@@ -19,8 +20,11 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
-
+    
     else if (animais == 'araraAzul') {
         texto.style.display = 'none'
         leao.style.display = 'none'
@@ -38,6 +42,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'ariranha') {
@@ -57,6 +64,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'elefanteAsiatico') {
@@ -76,6 +86,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'micoLeaoDourado') {
@@ -95,6 +108,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'tubaraoBaleia') {
@@ -114,6 +130,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'gorilaDaMontanha') {
@@ -133,6 +152,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'tartarugaDeCouro') {
@@ -152,6 +174,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'antilopeSeiga') {
@@ -171,6 +196,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'orangotango') {
@@ -190,6 +218,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'rinoceronte') {
@@ -209,6 +240,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'loboGuara') {
@@ -228,6 +262,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'tartarugaMarinha') {
@@ -247,6 +284,9 @@ function animais() {
         tartarugaMarinha.style.display = 'block'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'macacoNarigudo') {
@@ -266,6 +306,9 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'block'
         aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
     }
 
     else if (animais == 'aguiaCinzenta') {
@@ -285,6 +328,79 @@ function animais() {
         tartarugaMarinha.style.display = 'none'
         macacoNarigudo.style.display = 'none'
         aguiaCinzenta.style.display = 'block'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
+ 
+    }
+
+    else if (animais == 'oncaPintada') {
+        texto.style.di
+        splay = 'none'
+        leao.style.display = 'none'
+        araraAzul.style.display = 'none'
+        ariranha.style.display = 'none'
+        elefanteAsiatico.style.display = 'none'
+        micoLeaoDourado.style.display = 'none'
+        tubaraoBaleia.style.display = 'none'
+        gorilaDaMontanha.style.display = 'none'
+        tartarugaDeCouro.style.display = 'none'
+        antilopeSeiga.style.display = 'none'
+        orangotango.style.display = 'none'
+        rinoceronte.style.display = 'none'
+        loboGuara.style.display = 'none'
+        tartarugaMarinha.style.display = 'none'
+        macacoNarigudo.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'block'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'none'
+
+    }
+
+    else if (animais == 'tigre') {
+        texto.style.display = 'none'
+        leao.style.display = 'none'
+        araraAzul.style.display = 'none'
+        ariranha.style.display = 'none'
+        elefanteAsiatico.style.display = 'none'
+        micoLeaoDourado.style.display = 'none'
+        tubaraoBaleia.style.display = 'none'
+        gorilaDaMontanha.style.display = 'none'
+        tartarugaDeCouro.style.display = 'none'
+        antilopeSeiga.style.display = 'none'
+        orangotango.style.display = 'none'
+        rinoceronte.style.display = 'none'
+        loboGuara.style.display = 'none'
+        tartarugaMarinha.style.display = 'none'
+        macacoNarigudo.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'block'
+        jiboiaAmarela.style.display = 'none'
+    }
+
+    else if (animais == 'jiboiaAmarela') {
+        texto.style.display = 'none'
+        leao.style.display = 'none'
+        araraAzul.style.display = 'none'
+        ariranha.style.display = 'none'
+        elefanteAsiatico.style.display = 'none'
+        micoLeaoDourado.style.display = 'none'
+        tubaraoBaleia.style.display = 'none'
+        gorilaDaMontanha.style.display = 'none'
+        tartarugaDeCouro.style.display = 'none'
+        antilopeSeiga.style.display = 'none'
+        orangotango.style.display = 'none'
+        rinoceronte.style.display = 'none'
+        loboGuara.style.display = 'none'
+        tartarugaMarinha.style.display = 'none'
+        macacoNarigudo.style.display = 'none'
+        aguiaCinzenta.style.display = 'none'
+        oncaPintada.style.display = 'none'
+        tigre.style.display = 'none'
+        jiboiaAmarela.style.display = 'block'
+
     }
 
 }

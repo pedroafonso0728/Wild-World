@@ -6,54 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/especies.css">
-    <title>Wild World - Espécies</title>
+    <title>Wild World</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav">
-            <div class="logo">
-                <img src="./assets/logo (2).png" alt="logo_site" width="55px">
-                <p>WILD WORLD</p>
-            </div>
-
-            <div class="opcoes_nav">
-                <div class="home1"><a class="color_home" href="index.html">Home</a></div>
-                <!-- <div><a class="a" href="#especies">Espécies</a></div> -->
-                <div><a class="a" href="preservacao.html">Preservação</a></div>
-            </div>
-        </div>
         <div class=" embrulho_combo">
-            <div class="cadastro">
-                <h4>Cadastre a espécie que você mais gostou e descubra suas curiosidades</h4>
-                <div class="redirecionamento">
-                    <h5 class="direcionamento">Saiba mais</h5>
-                    <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button>Saiba mais</button></a>
-                </div>
-            </div>
             <br>
             <div class="embrulho_select">
-                <div class="combo_box">
-                    <select id="lista_animais" onclick="animais()">
-                        <option selected disabled>Animais</option>
-                        <option value="leao">Leão</option>
-                        <option value="araraAzul">Arara azul</option>
-                        <option value="ariranha">Ariranha</option>
-                        <option value="elefanteAsiatico">Elefante Asiatico</option>
-                        <option value="micoLeaoDourado">Mico leão dourado</option>
-                        <option value="tubaraoBaleia">Tubarão baleia</option>
-                        <option value="gorilaDaMontanha">Gorila da montanhas</option>
-                        <option value="tartarugaDeCouro">Tartaruga de couro</option>
-                        <option value="antilopeSeiga">Antilope seiga</option>
-                        <option value="orangotango">Orangotango</option>
-                        <option value="rinoceronte">Rinoceronte</option>
-                        <option value="loboGuara">Lobo guará</option>
-                        <option value="tartarugaMarinha">Tartaruga marinha</option>
-                        <option value="macacoNarigudo">Macaco narigudo</option>
-                        <option value="aguiaCinzenta">Onça preta</option>
-                    </select>
+                <div class="logo">
+                    <img src="./assets/logo (2).png" alt="logo_site" width="55px">
                 </div>
-                <button>Cadastrar</button>
+                <div class="combo_box">
+                    <h4>Cadastre a espécie que você mais gostou e <br>descubra suas curiosidades</h4>
+                    <br>
+                    <div class="seleCadas">
+                        <select id="lista_animais" onclick="animais()">
+                            <option selected disabled>Animais</option>
+                            <option value="leao">Leão</option>
+                            <option value="araraAzul">Arara azul</option>
+                            <option value="ariranha">Ariranha</option>
+                            <option value="elefanteAsiatico">Elefante Asiatico</option>
+                            <option value="micoLeaoDourado">Mico leão dourado</option>
+                            <option value="tubaraoBaleia">Tubarão baleia</option>
+                            <option value="gorilaDaMontanha">Gorila da montanhas</option>
+                            <option value="tartarugaDeCouro">Tartaruga de couro</option>
+                            <option value="antilopeSeiga">Antilope seiga</option>
+                            <option value="orangotango">Orangotango</option>
+                            <option value="rinoceronte">Rinoceronte</option>
+                            <option value="loboGuara">Lobo guará</option>
+                            <option value="tartarugaMarinha">Tartaruga marinha</option>
+                            <option value="macacoNarigudo">Macaco narigudo</option>
+                            <option value="aguiaCinzenta">Aguia cinzenta</option>
+                            <option value="oncaPintada">Onça pintada</option>
+                            <option value="tigre">Tigre siberiano</option>
+                            <option value="jiboiaAmarela">Jiboia amarela</option>
+                        </select>
+                        <div class="btn_especie">
+                            <button>Cadastrar</button>
+                        </div>
+                    </div>
+                    <div class="redirecionamento">
+                        <div class="embrulho_saibaMais">
+                            <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button>Saiba
+                                    mais</button></a>
+                        </div>
+                        <div class="home"><a style="color: black; text-decoration: none; font-size: 20px;"
+                                href="./preservacao.html">Preservação</a></div>
+                        <div class="home"><a style="color: yellow; text-decoration: none; font-size: 20px;"
+                                href="index.html">Home</a></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -91,7 +94,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal1">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/leao-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -135,7 +138,7 @@
                         <img src="./assets/fraco.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal2">
-                        <img src="../public/assets/leao.jpg" alt="">
+                        <img src="../public/assets/arara-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -148,7 +151,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -177,10 +179,10 @@
                 <div class="imagens">
                     <div class="imagem_forca">
                         Força:
-                        <img src="./assets/forca.png" width="40px" alt="">
+                        <img src="./assets/fraco.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal3">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/ariranha-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -193,7 +195,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -225,11 +226,11 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal4">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/elefante-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
-                        <img src="./assets/velocidade.png" width="43px" alt="">
+                        <img src="./assets/lesma.png" width="43px" alt="">
                     </div>
                 </div>
                 <div class="card">
@@ -238,7 +239,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -267,10 +267,10 @@
                 <div class="imagens">
                     <div class="imagem_forca">
                         Força:
-                        <img src="./assets/forca.png" width="40px" alt="">
+                        <img src="./assets/fraco.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal5">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/mico-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -283,7 +283,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -315,7 +314,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal6">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/tubaBaleia-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -328,7 +327,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -360,7 +358,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal7">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/gorila-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -373,7 +371,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -405,11 +402,11 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal8">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/tartaCouro-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
-                        <img src="./assets/velocidade.png" width="43px" alt="">
+                        <img src="./assets/lesma.png" width="43px" alt="">
                     </div>
                 </div>
                 <div class="card">
@@ -418,7 +415,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -450,7 +446,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal9">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/antilope_saiga-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -463,7 +459,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -495,7 +490,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal10">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/orangotango.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -508,7 +503,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -540,7 +534,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal11">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/rino-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -553,7 +547,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -585,7 +578,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal12">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/loboGuara-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -598,7 +591,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -627,14 +619,14 @@
                 <div class="imagens">
                     <div class="imagem_forca">
                         Força:
-                        <img src="./assets/forca.png" width="40px" alt="">
+                        <img src="./assets/fraco.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal13">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/tartaruga.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
-                        <img src="./assets/velocidade.png" width="43px" alt="">
+                        <img src="./assets/lesma.png" width="43px" alt="">
                     </div>
                 </div>
                 <div class="card">
@@ -643,7 +635,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -672,7 +663,7 @@
                 <div class="imagens">
                     <div class="imagem_forca">
                         Força:
-                        <img src="./assets/forca.png" width="40px" alt="">
+                        <img src="./assets/fraco.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal14">
                         <img src="./assets/macaco-narigudo.jpg" alt="">
@@ -688,7 +679,6 @@
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -723,7 +713,7 @@
                         <img src="./assets/forca.png" width="40px" alt="">
                     </div>
                     <div class="imagem_animal15">
-                        <img src="./assets/leao.jpg" alt="">
+                        <img src="./assets/aguiaCin-foto.jpg" alt="">
                     </div>
                     <div class="imagem_rapido">
                         Velocidade:
@@ -732,11 +722,144 @@
                 </div>
                 <div class="card">
                     <div class="texto">
-                        <h2 class="texto_card">Onça preta</h2>
+                        <h2 class="texto_card">Aguia cinzenta</h2>
                         <P>
                         <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
                             tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
-                        <br>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <br>
+                            <li>Ordem: Primata.</li>
+                            <br>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <br>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <br>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <br>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                            <br>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="embrulho_card16" id="oncaPintada">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal16">
+                        <img src="./assets/oncapintada-foto.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Onça pintada</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <br>
+                            <li>Ordem: Primata.</li>
+                            <br>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <br>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <br>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <br>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                            <br>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="embrulho_card17" id="tigre">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal17">
+                        <img src="./assets/tigre-foto.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Tigre siberiano</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
+                        <p class="desc">
+                            <li>Nome ciêntifico: Nasalis larvatus.</li>
+                            <br>
+                            <li>Ordem: Primata.</li>
+                            <br>
+                            <li>Habitat: Seu habitat está sempre em torno de rios, pântanos e mangues.</li>
+                            <br>
+                            <li>Nível Trófico(Tipo de alimentação): Herbívoro.</li>
+                            <br>
+                            <li>Velocidade: Estes animais são os primatas mais capacitados em nado, os animais já em
+                                idade adulta apresentam um nado com velocidade superior a dos crocodilos.</li>
+                            <br>
+                            <li>Curiosidade: Nariz grande significa uma vida sexual mais ativa, com o som de
+                                acasalamento que
+                                sai de suas narinas esse animal conquista maior respeito entre as femêas.</li>
+                            <br>
+                        </p>
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+            <div class="embrulho_card18" id="jiboiaAmarela">
+                <div class="imagens">
+                    <div class="imagem_forca">
+                        Força:
+                        <img src="./assets/forca.png" width="40px" alt="">
+                    </div>
+                    <div class="imagem_animal18">
+                        <img src="./assets/jiboia-foto.jpg" alt="">
+                    </div>
+                    <div class="imagem_rapido">
+                        Velocidade:
+                        <img src="./assets/velocidade.png" width="43px" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="texto">
+                        <h2 class="texto_card">Jiboia amarela</h2>
+                        <P>
+                        <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das florestas
+                            tropicais de Bornéu, o qual se encontra localizado no oceano Índico.</h4>
                         <p class="desc">
                             <li>Nome ciêntifico: Nasalis larvatus.</li>
                             <br>
@@ -762,7 +885,6 @@
     </div>
     <script src="./js/especies.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </div>
 </body>
 <script>
 
@@ -782,15 +904,18 @@
         'Tartaruga marinha',
         'Macaco narigudo',
         'Águia cinzenta',
+        'Onça pintada',
+        'Tigre siberiano',
+        'Jiboia amarela',
     ];
 
     const data1 = {
         labels: labels1,
         datasets: [{
-            label: 'Animais mais votados',
+            label: 'Animais mais escolhidos',
             backgroundColor: 'rgb(252, 245, 95)',
             borderColor: 'rgb(0, 0, 0)',
-            data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25],
+            data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25, 50, 25, 33],
         },
         ]
     };
