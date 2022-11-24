@@ -1,0 +1,267 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sarala&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Alegreya", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------CADASTRO---------------------------- */
+
+.container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(36, 64, 9);
+    background-image: url();
+    /* border: solid 2px blue; */
+}
+
+.home1 a {
+    display: flex;
+    /* justify-content: end; */
+    width: 550%;
+    color: black;
+    font-weight: bold;
+    /* border: solid 2px blue; */
+}
+
+.home2 a {
+    display: flex;
+    /* justify-content: end; */
+    width: 550%;
+    color: black;
+    font-weight: bold;
+    /* border: solid 2px blue; */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 55%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    /* border: solid 2px green; */
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    border-radius: 15PX;
+    width: 45%;
+    height: 100%;
+    /* border: solid 2px blue; */
+    background: linear-gradient(180deg, #132B0D 0%, rgba(9, 45, 1, 0.952083) 15.86%, rgba(37, 186, 0, 0.91) 100%);
+    /* background-image: url(../assets/tigre_teste.jpg); */
+    left: 0%;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.titulo2 {
+    color: green;
+}
+
+.titulo3 {
+    color: green;
+}
+
+.first-content {
+    display: flex;
+    /* display: none; */
+    /* border: solid 2px blue; */
+}
+
+.opcoesCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 3px black; */
+}
+
+.opcoesCadastro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    /* border: solid 3px black; */
+}
+
+.ver_senha {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    width: 47%;
+    /* border: solid 1px yellow; */
+}
+
+.ver_senha2 {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    width: 66%;
+    /* border: solid 1px yellow; */
+}
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+.first-column {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* flex: 1 0 auto; */
+    z-index: 10;
+    width: 50%;
+    /* border: solid 2px red; */
+}
+
+.second-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* flex: 1 0 auto; */
+    width: 60%;
+    height: 85%;
+    /* border: solid 2px green; */
+}
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    /* margin: 8px; */
+    /* border: solid 2px orange; */
+}
+
+.formulario2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    /* margin: 8px; */
+    /* border: solid 2px blue; */
+}
+
+.formulario1 input {
+    height: 30px;
+    border: none;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    text-align: center;
+    /* border: solid 1px red; */
+}
+
+.formulario2 input {
+    height: 30px;
+    border: none;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    /* border: solid 1px red; */
+}
+
+.btn {
+    font-size: 10px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    align-self: center;
+    text-transform: uppercase;
+    width: 150px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    /* border: solid 2px orange; */
+}
+
+.btn {
+    font-size: 10px;
+    background-color: mediumseagreen;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 1s;
+    /* border: solid 2px orange; */
+    /* background-color: transparent; */
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: #32b9cd;
+    box-shadow: 2px 2px 2px black;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: forestgreen;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+.btn:active {
+    box-shadow: 0px 0px 0px black;
+}
+
+.btnin1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 68%;
+    /* border: solid 2px orange; */
+}
+
+.btnin2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 65%;
+    /* border: solid 2px orange; */
+}
+
+.btnup1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 72.5%;
+    /* border: solid 2px orange; */
+}
+
+.btnup2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 69%;
+    /* border: solid 2px orange; */
+}
+
+.input_2 {
+    height: 100%;
+    width: 100%;
+    /* border: solid 1px orange; */
+}

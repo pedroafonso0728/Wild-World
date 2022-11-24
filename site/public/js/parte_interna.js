@@ -2,6 +2,7 @@
 function especiesext() {
   seleçao_especiesext.style.display = ""
   seleçao_mural.style.display = "none"
+  seleçao_preservacao.style.display = "none"
   seleçao_grafico.style.display = "none"
 }
 
@@ -9,27 +10,38 @@ function mural() {
 
   seleçao_especiesext.style.display = "none"
   seleçao_mural.style.display = ""
+  seleçao_preservacao.style.display = "none"
+  seleçao_grafico.style.display = "none"
+}
+
+function preservacao(){
+  seleçao_especiesext.style.display = "none"
+  seleçao_mural.style.display = "none"
+  seleçao_preservacao.style.display = ""
   seleçao_grafico.style.display = "none"
 }
 
 function grafico() {
   seleçao_especiesext.style.display = "none"
   seleçao_mural.style.display = "none"
+  seleçao_preservacao.style.display = "none"
   seleçao_grafico.style.display = ""
 }
 
 
-var validacao = 0;
-var animal_anterior;
+
+var animal_anterior = 0;
 
 function exibir_animal() {
   
   var lista_animais = [leao, araraAzul, ariranha, elefanteAsiatico, micoLeaoDourado,
     tubaraoBaleia, gorilaDaMontanha, tartarugaDeCouro, antilopeSeiga, orangotango,
-    rinoceronte, loboGuara, tartarugaMarinha, macacoNarigudo, aguiaCinzenta, oncaPintada, 
+    rinoceronteNegro, loboGuara, tartarugaMarinha, macacoNarigudo, aguiaCinzenta, oncaPintada, 
     tigre, jiboiaAmarela];
 
-    if (validacao > 0){
+    // animal_anterior >= 0 vai permitir que a escolha anterior da lista não apareça,
+    // assim podendo fazer com que toda a escolha anterior seja (none).
+    if (animal_anterior >= 0){
       lista_animais[animal_anterior].style.display = "none";
     }
 
@@ -39,13 +51,11 @@ function exibir_animal() {
       id_texto_boasVindas.style.display = "none"; 
       lista_animais[contador].style.display = "block";
       animal_anterior = contador;
-      validacao++
     }
   }
 }
 
 
-// texto.style.display = 'none'
       // leao.style.display = 'block'
       // araraAzul.style.display = 'block'
       // ariranha.style.display = 'block'

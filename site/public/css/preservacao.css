@@ -55,7 +55,7 @@ body {
 
 .opçoes_painel {
     /* border: solid red 1px; */
-    height: 45%;
+    height: 60%;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -64,17 +64,19 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .opçoes1 {
     /* border: solid red 1px; */
-    height: 25%;
+    height: 35%;
     width: 100%;
     border-radius: 19px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     cursor: pointer;
+    /* text-align: center; */
 }
 
 .opçoes1:hover {
@@ -85,7 +87,7 @@ body {
 
 .opçoes2 {
     /* border: solid red 1px; */
-    height: 25%;
+    height: 35%;
     width: 100%;
     border-radius: 19px;
     background-color: #ffffff;
@@ -102,7 +104,7 @@ body {
 
 .opçoes3 {
     /* border: solid red 1px; */
-    height: 25%;
+    height: 35%;
     width: 100%;
     border-radius: 19px;
     background-color: #ffffff;
@@ -120,19 +122,19 @@ body {
 
 .opçoes4 {
     /* border: solid red 1px; */
-    height: 20%;
+    height: 35%;
     width: 100%;
     border-radius: 19px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     display: flex;
-    align-items: flex-end;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
 .opçoes4:hover {
-    background-color: #363636;
-    color: #FFF;
+    background-color: #3fa43a;
+    color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -167,6 +169,15 @@ body {
 }
 
 .opçao3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 90%;
+    /* border: solid 1px blue; */
+}
+
+.opçao4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,7 +230,7 @@ body {
     width: 98%;
     border-radius: 18px;
     background-color: #3d962c;
-    /* border: red solid 1px;s */
+    /* border: red solid 1px; */
 }
 
 .conteudo0 .texto_enunciado {
@@ -276,22 +287,23 @@ a {
     width: 98%;
     margin-top: 1%;
     margin-bottom: 1%;
-
 }
 
 .horizontal {
-    height: 27%;
-    border: rgb(49, 22, 99) solid 1px;
+    height: 25%;
+    /* border: rgb(49, 22, 99) solid 1px; */
+    height: 26%;
     display: flex;
     text-align: center;
     justify-content: space-between;
 }
 
 
-.quadrado:hover {
+/* .quadrado:hover {
     background-color: #b9cb52;
     transition: 0.5s !important;
-}
+    border: red solid 1px;
+} */
 
 .quadrado img {
     height: 80%;
@@ -309,6 +321,11 @@ a {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+}
+
+.quadrado:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .quadrado .img1 {
@@ -334,14 +351,14 @@ a {
 
 .quadrado .img4 {
     width: 95%;
-    height: 100%;
+    height: 82.5%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img5 {
     width: 95%;
-    height: 100%;
+    height: 82.5%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
@@ -355,35 +372,35 @@ a {
 
 .quadrado .img7 {
     width: 95%;
-    height: 90%;
+    height: 84%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img8 {
     width: 95%;
-    height: 100%;
+    height: 84%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img9 {
     width: 95%;
-    height: 90%;
+    height: 85%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img10 {
     width: 98%;
-    height: 90%;
+    height: 85%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img11 {
     width: 95%;
-    height: 100%;
+    height: 80%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
@@ -397,14 +414,14 @@ a {
 
 .quadrado .img13 {
     width: 95%;
-    height: 100%;
+    height: 85%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }
 
 .quadrado .img14 {
     width: 95%;
-    height: 90%;
+    height: 85%;
     border-radius: 10px;
     /* border: red solid 1px; */
 }

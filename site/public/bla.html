@@ -16,22 +16,29 @@
             <div class="logo_painel">
                 <img src="./assets/logo (2).png">
             </div>
-            <div class="boas_vindas">
+            <!-- <div class="boas_vindas">
                 <div class="ola" style="float:left; width: 30%;">Olá,</div>
                 <div id="div_puxar_nome">Pedro.</div>
                 <div>Seja bem vindo!</div>
-            </div>
+            </div> -->
             <div class="opçoes_painel">
 
                 <div class="opçoes1" id="id_especiesext" onclick="especiesext()">
                     <div class="opçao3">Espécies</div>
                 </div>
+                <br>
                 <div class="opçoes2" id="id_mural" onclick="mural()">
                     <div class="opçao1">Preservação</div>
                 </div>
+                <br>
+                <div class="opçoes4" id="id_preservacao" onclick="preservacao()">
+                    <div class="opcao4">O que é preservação ? Como podemos ajudar ?</div>
+                </div>
+                <br>
                 <div class="opçoes3" id="id_grafico" onclick="grafico()">
                     <div class="opçao2">Grafico</div>
                 </div>
+                <br>
             </div>
             <div class="botao_sair">
                 <a href="index.html"><button onclick="sair()">Sair</button></a>
@@ -47,11 +54,11 @@
                 <div class=" embrulho_combo">
                     <br>
                     <div class="embrulho_select">
-                        <div class="logo">
+                        <!-- <div class="logo">
                             <img src="./assets/logo (2).png" alt="logo_site" width="55px">
-                        </div>
+                        </div> -->
                         <div class="combo_box">
-                            <h4>Cadastre a espécie que você mais gostou e <br>descubra suas curiosidades</h4>
+                            <h4>Cadastre a espécie que você mais gostou e descubra suas curiosidades</h4>
                             <br>
                             <div class="seleCadas">
                                 <select id="select_animais" onclick="exibir_animal()">
@@ -66,7 +73,7 @@
                                     <option value="7">Tartaruga de couro</option>
                                     <option value="8">Antilope seiga</option>
                                     <option value="9">Orangotango</option>
-                                    <option value="10">Rinoceronte</option>
+                                    <option value="10">Rinoceronte negro</option>
                                     <option value="11">Lobo guará</option>
                                     <option value="12">Tartaruga marinha</option>
                                     <option value="13">Macaco narigudo</option>
@@ -81,7 +88,7 @@
                             </div>
                             <div class="redirecionamento">
                                 <div class="embrulho_saibaMais">
-                                    <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button>Saiba
+                                    <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button class="btn_saibaMais">Saiba
                                             mais</button></a>
                                 </div>
                             </div>
@@ -269,7 +276,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal4">
-                                <img src="./assets/elefante-foto.jpg" alt="">
+                                <img src="./assets/elefante-foto.jfif" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -461,7 +468,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal8">
-                                <img src="./assets/tartaCouro-foto.jpg" alt="">
+                                <img src="./assets/tartacouro-foto.jfif" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -598,14 +605,14 @@
 
 
 
-                    <div class="embrulho_card11" id="rinoceronte">
+                    <div class="embrulho_card11" id="rinoceronteNegro">
                         <div class="imagens">
                             <div class="imagem_forca">
                                 Força:
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal11">
-                                <img src="./assets/rino-foto.jpg" alt="">
+                                <img src="./assets/rinoceronte_negro.jpg    " alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -615,7 +622,7 @@
                         <div class="card">
                             <div class="texto">
                                 <div class="texto_titulo">
-                                    <h2 class="texto_card">Rinoceronte</h2>
+                                    <h2 class="texto_card">Rinoceronte negro</h2>
                                     <P>
                                     <h4>O macaco-narigudo é um macaco da família dos cercopitecídeos, endêmico das
                                         florestas
@@ -701,7 +708,7 @@
                                 <img src="./assets/fraco.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal13">
-                                <img src="./assets/tartaruga.jpg" alt="">
+                                <img src="./assets/tartaruga.png" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -989,6 +996,10 @@
                 <!-- </div> -->
             </div>
 
+            <div class="container_conteudo conteudo0" id="seleçao_preservacao" style="display:none;">
+
+            </div>
+
 
 
             <div class="container_conteudo conteudo0" id="seleçao_mural" style="display:none;">
@@ -1014,7 +1025,7 @@
                             <div>Ariranha</div>
                         </div>
                         <div class="quadrado">
-                            <img class="img4" src="./assets/elefante-foto.jpg">
+                            <img class="img4" src="./assets/elefante-foto.jfif">
                             <div>Elefante asiatico</div>
                         </div>
                         <div class="quadrado">
@@ -1033,7 +1044,7 @@
                             <div>Gorila</div>
                         </div>
                         <div class="quadrado">
-                            <img class="img8" src="./assets/tartaCouro-foto.jpg">
+                            <img class="img8" src="./assets/tartacouro-foto.jfif">
                             <div>Tartaruga de couro</div>
                         </div>
                         <div class="quadrado">
@@ -1045,8 +1056,8 @@
                             <div>Orangotango</div>
                         </div>
                         <div class="quadrado">
-                            <img class="img11" src="./assets/rino-foto.jpg">
-                            <div>Rinoceronte Indiano</div>
+                            <img class="img11" src="./assets/rinoceronte_negro.jpg">
+                            <div>Rinoceronte negro</div>
                         </div>
                         <div class="quadrado">
                             <img class="img12" src="./assets/loboGuara-foto.jpg">
@@ -1056,7 +1067,7 @@
                     <br><br><br>
                     <div class="horizontal">
                         <div class="quadrado">
-                            <img class="img13" src="./assets/tartaruga.jpg">
+                            <img class="img13" src="./assets/tartaruga.png">
                             <div>Tartaruga marinha</div>
                         </div>
                         <div class="quadrado">
@@ -1086,8 +1097,8 @@
 
 
 
-            <!-- <div class="container_conteudo conteudo2" id="seleçao_grafico" style="display:none;">
-                <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div>
+            <div class="container_conteudo conteudo2" id="seleçao_grafico" style="display:none;">
+                <!-- <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div> -->
                 <div class="analitics">
                     <div class="metrica facil">
                         <div>10</div>
@@ -1116,7 +1127,7 @@
                         <div id='piechart' style="height:  auto; width: auto;  "></div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <script src="./js/parte_interna.js"></script>

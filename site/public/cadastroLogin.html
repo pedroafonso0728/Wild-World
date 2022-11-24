@@ -20,7 +20,7 @@
                 <p class="descricao">Por favor logue-se com as suas informações pessoais</p>
                 <br>
                 <div class="btnin1">
-                    <button id="signin" class="btn">Sign in</button>
+                    <a href="./login.html"><button id="signin" class="btn">Sign in</button></a>
                 </div>
             </div>
 
@@ -53,55 +53,13 @@
                     </div>
                     <div class="input_1" style="height: 1vw;  font-size: 1vw;" id="msgErro"></div>
                     <br>
-                    <!-- <input onkeyup="validarEmail()" type="text" placeholder="Email" id="Email" />
-                    <input onkeyup="validarForcaSenha()" type="password" placeholder="Senha" id="senha" />
-                    <input onkeyup="validarConfirmarSenha()" type="password" placeholder="Repetir Senha" id="confirmaSenha" /> -->
-                    <div class="btnup1">
-                        <button id="signin2" class="btn">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="content second-content">
-            <div class="first-column">
-                <div class="logo">
-                    <img src="./assets/logo (2).png" width="55px" alt="">
-                </div>
-                <h2 class="titulo">Olá, amigo!</h2>
-                <p class="descricao">Ensira suas informações pessoais</p>
-                <br>
-                <div class="btnup2">
-                    <button id="signup" class="btn">Sign up</button>
-                </div>
-            </div>
-            <div class="second-column">
-                <div class="opcoesCadastro2">
-                    <div class="formulario2">
-                        <div class="home2"><a class="color_home" href="index.html">Home</a></div>
-                        <h2 class="titulo titulo3">Entre e mergulhe</h2>
-                        <label for="">
-                            <img src="./assets/email.png" alt="" width="15px">
-                            <input onkeyup="validarEmail2()" type="email" placeholder="email@emal.com" id="email2">
-                        </label>
-                        <label for="">
-                            <img src="./assets/trancar.png" alt="" width="15px">
-                            <input onkeyup="validarForcaSenha2()" type="password" placeholder="********" id="senha2">
-                        </label>
-                        <label for="verSenha" class="ver_senha2">
-                            <input type="checkbox" onclick="mostrarSenha2()" id="verSenha2">Mostrar senha
-                            <span class="checkmark"></span>
-                        </label>
-                        <div class="input_2" style="height: 1vw;  font-size: 1vw;" id="msgErro2"></div>
-                        <br>
-                        <div class="btnin2">
-                            <a href="especies.html"><button class="btn">Sign in</button></a>
-                        </div>
+                    <div class="btnup1">
+                        <button onclick="cadastrar()" id="signin2" class="btn">Sign up</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="./js/cadastrologin.js"></script>
 </body>

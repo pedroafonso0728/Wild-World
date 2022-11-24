@@ -176,6 +176,7 @@ body {
     margin: 4px;
     border-radius: 10px;
     background-color: #ecf0f1;
+    text-align: center;
     /* border: solid 1px red; */
 }
 
@@ -259,15 +260,12 @@ body {
     /* border: solid 2px orange; */
 }
 
-.input_1 {
-   /* border: solid 1px blue; */
-}
-
 .input_2 {
     height: 100%;
     width: 100%;
     /* border: solid 1px orange; */
 }
+
 /* ----------SEGUNDO CONTEUDO--------------------------------------- */
 
 .second-content {
@@ -301,10 +299,6 @@ body {
     /* animation: slide_direita 2s; */
 }
 
-/* .sign-up-js .content::before {
-    animation: slide_esquerda 2s;
-} */
-
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column {
     z-index: -1;
@@ -314,63 +308,3 @@ body {
 .sign-up-js .first-content .second-column {
     z-index: 11;
 }
-
-/* --------------ANIMAÇÃO CSS------------------------------------- */
-
-/* @keyframes slide_direita {
-
-    from {
-        left: 0;
-        width: 45%;
-    }
-
-    25% {
-        left: 15%;
-        width: 45%;
-    }
-
-    50% {
-        left: 40%;
-        width: 60%;
-    }
-
-    75% {
-        left: 50%;
-        width: 50%;
-
-    }
-
-    to {
-        left: 55%;
-        width: 45%;
-    }
-}
-
-@keyframes slide_esquerda {
-
-    from {
-        left: 55;
-        width: 45%;
-    }
-
-    25% {
-        left: 50%;
-        width: 45%;
-    }
-
-    50% {
-        left: 40%;
-        width: 60%;
-    }
-
-    75% {
-        left: 15%;
-        width: 50%;
-
-    }
-
-    to {
-        left: 0%;
-        width: 45%;
-    }
-} */
