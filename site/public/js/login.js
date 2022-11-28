@@ -5,6 +5,7 @@ function entrar() {
     var senhaVar = senha2.value;
   
     if (emailVar == "" || senhaVar == "") {
+
         cardErro.style.display = "block"
         mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
         finalizarAguardar();
@@ -30,13 +31,30 @@ function entrar() {
         console.log("ESTOU NO THEN DO entrar()!")
   
         if (resposta.ok) {
+
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Bora mergulhar!'
+          })
             console.log(resposta);
   
             resposta.json().then(json => {
                 console.log(json);
                 console.log(JSON.stringify(json));
   
-                sessionStorage.EMAIL_USUARIO = json.email2;
+                sessionStorage.EMAIL_USUARIO = json.email;
                 sessionStorage.NOME_USUARIO = json.nome;
                 sessionStorage.ID_USUARIO = json.idUsuario;
   

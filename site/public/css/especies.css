@@ -88,8 +88,6 @@ body {
     display: none;
 }
 
-
-
 #select_animais {
     /* flex: 1; */
     width: 40%;
@@ -146,15 +144,23 @@ body {
 }
 
 .grafico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 20px;
-    height: 70%;
-    width: 60%;
+    height: 75%;
+    width: 55%;
     border-radius: 15px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* position: fixed; */
     border: solid 2px black;
 }
+
+/* canvas{
+    height: 70%;
+    width: 70%;
+} */
 
 .texto_grafico {
     font-size: 18px;
@@ -622,10 +628,6 @@ li {
     /* border: solid 1px red; */
 }
 
-.ponto {
-    color: yellow;
-}
-
 .card {
     display: flex;
     border-radius: 15px;
@@ -666,7 +668,7 @@ li {
 
 button {
     font-size: 15px;
-    background-color: yellow;
+    background-color: rgb(248, 236, 0);
     border-radius: 12px;
     height: 28px;
     cursor: pointer;

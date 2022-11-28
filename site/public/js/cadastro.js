@@ -105,10 +105,23 @@ function cadastrar() {
       console.log("resposta: ", resposta);
 
       if (resposta.ok) {
-          cardErro.style.display = "block";
-
-          mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'success',
+          title: 'Cadastro realizado com sucesso!'
+        })
+        
           setTimeout(() => {
               window.location = "login.html";
           }, "2000")
