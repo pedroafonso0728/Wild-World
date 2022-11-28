@@ -1,5 +1,69 @@
 
 // ---------cadastro e login-------------------------------
+function entrar() {
+  // aguardar();
+
+  var emailVar = email.value;
+  var senhaVar = senha.value;
+
+  if (emailVar == "" || senhaVar == "") {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+      finalizarAguardar();
+      return false;
+  }
+  else {
+      setInterval(sumirMensagem, 5000)
+  }
+
+  console.log("FORM LOGIN: ", emailVar);
+  console.log("FORM SENHA: ", senhaVar);
+
+  fetch("/usuarios/autenticar", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+          emailServer: emailVar,
+          senhaServer: senhaVar
+      })
+  }).then(function (resposta) {
+      console.log("ESTOU NO THEN DO entrar()!")
+
+      if (resposta.ok) {
+          console.log(resposta);
+
+          resposta.json().then(json => {
+              console.log(json);
+              console.log(JSON.stringify(json));
+
+              sessionStorage.EMAIL_USUARIO = json.email;
+              sessionStorage.NOME_USUARIO = json.nome;
+              sessionStorage.ID_USUARIO = json.idUsuario;
+
+              setTimeout(function () {
+                  window.location = "./bla.html";
+              }, 1000); // apenas para exibir o loading
+
+          });
+
+      } else {
+
+          console.log("Houve um erro ao tentar realizar o login!");
+
+          resposta.text().then(texto => {
+              console.error(texto);
+              finalizarAguardar(texto);
+          });
+      }
+
+  }).catch(function (erro) {
+      console.log(erro);
+  })
+
+  return false;
+}
 
 
 function cadastrar() {
@@ -7,10 +71,10 @@ function cadastrar() {
 
   //Recupere o valor da nova input pelo nome do id
   // Agora vá para o método fetch logo abaixo
-  var nomeVar = nome_.value;
+  var nomeVar = nome.value;
   var emailVar = email.value;
   var senhaVar = senha.value;
-  var confirmacaoSenhaVar = confirmasenha_input.value;
+  var confirmacaoSenhaVar = confirmaSenha.value;
 
   if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
       cardErro.style.display = "block"
@@ -65,31 +129,6 @@ function cadastrar() {
 function sumirMensagem() {
   cardErro.style.display = "none"
 }
-
-
-// const btnsignin = document.querySelector("#signin");
-// const btnsignup = document.querySelector("#signup");
-// const body = document.querySelector("body");
-
-// btnsignin.addEventListener("click", function () {
-//     body.className = "sign-in-js";
-// });
-
-// btnsignup.addEventListener("click", function () {
-//     body.className = "sign-up-js";
-// });
-
-
-// const btnsignin2 = document.querySelector("#signin2");
-// const btnsignup2 = document.querySelector("#signup2");
-
-// btnsignin2.addEventListener("click", function () {
-//     body.className = "sign-in-js";
-// });
-
-// btnsignup2.addEventListener("click", function () {
-//     body.className = "sign-up-js";
-// });
 
 
 function validarEmail() {

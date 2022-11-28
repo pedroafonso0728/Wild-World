@@ -78,6 +78,37 @@ body {
     /* border: solid 1px blue; */
 }
 
+#select_animais {
+    width: 50%;
+    background-color: #29b843;
+    /* border: solid 1px blue; */
+}
+
+#select_animais::-ms-expand {
+    display: none;
+}
+
+
+
+#select_animais {
+    /* flex: 1; */
+    width: 40%;
+    /* padding: 0 .5em; */
+    color: black;
+    cursor: pointer;
+    background-color: rgb(248, 236, 0);
+    position: relative;
+    display: flex;
+    padding: 3%;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+#select_animais:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .btn_especie {
     display: flex;
     /* justify-content: center;  */
@@ -97,21 +128,11 @@ body {
 
 .redirecionamento {
     display: flex;
-    /* flex-direction: row-reverse; */
-    /* justify-content: flex-end; */
     align-items: center;    
     justify-content: space-around;
     width: 50%;
     /* border: solid 1px yellow; */
 }
-
-/* .redirecionamento h5 {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 20px;
-    width: 25%;
-    border: solid 1px green;
-} */
 
 .container_grafico {
     display: flex;
@@ -127,8 +148,8 @@ body {
 .grafico {
     text-align: center;
     margin: 20px;
-    height: 65%;
-    width: 45%;
+    height: 70%;
+    width: 60%;
     border-radius: 15px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* position: fixed; */
@@ -149,13 +170,27 @@ body {
     height: 85%;
     margin: 10px;
     border-radius: 15px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border: solid 2px black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: solid 2px  black; */
+    
 }
+
+.gifGuepardo {
+    /* border: solid 1px red; */
+    background-image: url('../assets/guepardoG.gif');
+    background-size:550px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 98%;
+    height: 44%;
+    border-radius: 10px;
+}
+
 
 .embrulhotexto {
     border-radius: 15px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 .embrulhotexto p {
@@ -622,39 +657,6 @@ li {
     /* border: solid 1px black; */
 }
 
-#select_animais {
-    width: 50%;
-    background-color: #29b843;
-    /* border: solid 1px blue; */
-}
-
-#select_animais::-ms-expand {
-    display: none;
-}
-
-#select_animais {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    background: #6aa79a;
-    overflow: hidden;
-    border-radius: .25em;
-}
-
-#select_animais {
-    /* flex: 1; */
-    width: 30%;
-    /* padding: 0 .5em; */
-    color: black;
-    cursor: pointer;
-    background-color: rgb(47, 168, 31);
-}
-
-#select_animais:hover {
-    box-shadow: 2px 2px 2px black;
-}
 
 .cadastro {
     text-align: center;

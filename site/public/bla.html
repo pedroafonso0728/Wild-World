@@ -16,11 +16,6 @@
             <div class="logo_painel">
                 <img src="./assets/logo (2).png">
             </div>
-            <!-- <div class="boas_vindas">
-                <div class="ola" style="float:left; width: 30%;">Olá,</div>
-                <div id="div_puxar_nome">Pedro.</div>
-                <div>Seja bem vindo!</div>
-            </div> -->
             <div class="opçoes_painel">
 
                 <div class="opçoes1" id="id_especiesext" onclick="especiesext()">
@@ -32,7 +27,7 @@
                 </div>
                 <br>
                 <div class="opçoes4" id="id_preservacao" onclick="preservacao()">
-                    <div class="opcao4">O que é preservação ? Como podemos ajudar ?</div>
+                    <div class="opcao4">Qual a importância ? Por que ajudar ?</div>
                 </div>
                 <br>
                 <div class="opçoes3" id="id_grafico" onclick="grafico()">
@@ -41,7 +36,7 @@
                 <br>
             </div>
             <div class="botao_sair">
-                <a href="index.html"><button onclick="sair()">Sair</button></a>
+                <a href="index.html"><button onclick="limpar_Sessao()">Sair</button></a>
             </div>
         </div>
 
@@ -54,9 +49,6 @@
                 <div class=" embrulho_combo">
                     <br>
                     <div class="embrulho_select">
-                        <!-- <div class="logo">
-                            <img src="./assets/logo (2).png" alt="logo_site" width="55px">
-                        </div> -->
                         <div class="combo_box">
                             <h4>Cadastre a espécie que você mais gostou e descubra suas curiosidades</h4>
                             <br>
@@ -83,15 +75,17 @@
                                     <option value="17">Jiboia amarela</option>
                                 </select>
                                 <div class="btn_especie">
-                                    <button>Cadastrar</button>
+                                    <button onclick="cadastrar()">Cadastrar</button>
                                 </div>
                             </div>
-                            <div class="redirecionamento">
-                                <div class="embrulho_saibaMais">
-                                    <a href="https://www.nationalgeographicbrasil.com/search?q=animais"><button class="btn_saibaMais">Saiba
+                            <!-- <div class="redirecionamento"> -->
+                                <!-- <div class="embrulho_saibaMais">
+                                    <a href="https://www.nationalgeographicbrasil.com/animais"><button
+                                            class="btn_saibaMais">Saiba
                                             mais</button></a>
-                                </div>
-                            </div>
+                                </div> -->
+                                <div class="saibamais2"> <a href="https://www.nationalgeographicbrasil.com/animais">Descubra mais</a></div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -99,10 +93,7 @@
                 <div class="container_grafico">
                     <div class="grafico">
                         <section>
-                            <span class="texto_grafico"><br>Seu animal escolhido foi o leão! um animal simplismente
-                                fantastico,
-                                não ?
-                                como pode ver, muitas pessoas compartilham do mesmo pensamento que você.
+                            <span class="texto_grafico"><br>Confira os animais mais votados e descubra o preferido pelo publico!
                             </span>
                             <br><br>
                             <canvas id="myChart1"></canvas>
@@ -115,13 +106,16 @@
 
                     <div class="texto_boasVindas" id="id_texto_boasVindas">
                         <div class="embrulhotexto">
-                            <h1>Seja bem vindo(a), Nome</h1>
+                            <h1>Seja bem vindo(a), <span id="b_usuario"></span>!</h1>
                             <br>
                             <p>Otima escolha ter se cadastrado e se tornado parte dessa grande familia!
                                 Aqui você pode escolher um animal e saber diversas coisas sobre ele e suas curiosidades,
                                 além de
                                 conseguir cadastra-lo e visualizar quantas pessoas escolheram o mesmo animal que você.
                             </p>
+                        </div>
+                        <div class=gifGuepardo>
+                        
                         </div>
                     </div>
 
@@ -410,6 +404,7 @@
                             </div>
                         </div>
                     </div>
+
 
 
 
@@ -996,8 +991,87 @@
                 <!-- </div> -->
             </div>
 
-            <div class="container_conteudo conteudo0" id="seleçao_preservacao" style="display:none;">
+            <div class="container_conteudo2 conteudo3" id="seleçao_preservacao" style="display:none;">
+                <div class="enunciado2">
+                    <div class="texto_enunciado">
+                        <div>Sobre prevenção</div>
+                    </div>
+                    <div class="saibamais"> <a
+                            href="https://standfortrees.org/pt/blog/how-to-help-endangered-species/">Descubra
+                            mais</a>
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="o_que_e">
+                        <div class="pergunta1">
+                            <p class="texto_pergunta" style="text-align: center;">Importância:</p>
+                        </div>
+                        <div class="texto_pergunta1">
+                            <p style="text-align: center;">
+                                "Todas as espécies são importantes para a natureza, cada uma tem diversas funções
+                                importantes para manter o equilíbrio ecológico”, “Porque a espécie vive sem o homem, mas
+                                o homem não vive sem a espécie"
+                            </p>
+                            <br>
+                        </div>
+                        <li style="color: yellow; font-size: 25px; font-weight: bold;">Essencial:</li>
+                        <p style="margin: 7px;">
+                            Sem dúvidas, preservar as espécies é essencial para garantir a manutenção e equilíbrio do
+                            nosso ecossistema maior, a terra. Quanto maior for o número de espécies, maior será a
+                            garantia de que os serviços ambientais prestados pela natureza (produção de oxigênio,
+                            ciclagem de nutrientes, polinização, etc.) continuarão sendo ofertados e estarão em
+                            constante renovação.
+                        </p>
+                        <br>
+                        <li style="color: yellow; font-size: 25px; font-weight: bold;">Consequência</li>
+                        <p>
+                            Preservar os animais, portanto, não é só uma questão ecológica e cultural. A interferência da destruição e extinção prematura de espécies da fauna incide diretamente na vegetação e, por consequência, em todo o bioma, afetando também os rios e cursos d’água e a qualidade do ar, além das populações que estão economicamente ligadas à pesca, à caça ou ao extrativismo.
+                        </P>
+                        <br>
+                        <li style="color: yellow; font-size: 25px; font-weight: bold;">Avanço tecnologico:</li>
+                        <p>
+                            Nos últimos anos, os zoológicos também tiveram outras conquistas importantes que ajudaram no
+                            desenvolvimento de técnicas para conservação e proteção de espécies. “Além de novos
+                            softwares e técnicas, a experiência entre os profissionais da área também foi aprimorada,
+                            capacitando pessoas para coordenar estes programas em todo o mundo, inclusive no Brasil”,
+                            destaca Cláudia Almeida Igayara de Souza, presidente da AZAB. Cláudia aponta,
+                            principalmente, avanços como o de softwares que auxiliam no gerenciamento de populações e
+                            análises estatísticas e da genética molecular, o que tornou possível o acesso a informações
+                            essenciais para entendimento e organização das espécies.
+                        </p>
+                    </div>
 
+                    <div class="como_ajudar">
+                        <div class="pergunta2">
+                            <br>
+                            <p class="texto_pergunta" style="text-align: center;">Por que ajudar ?</p>
+                        </div>
+                        <div class="texto_pergunta2">
+                            <p style="text-align: center;">
+                                "O mundo está a passar por uma extinção em massa. De facto, de acordo com a União
+                                Internacional para a Conservação da Natureza, em Março de 2019 existiam 7.510 espécies
+                                animais em perigo ou criticamente ameaçadas de extinção em todo o mundo"
+                            </p>
+                            <br>
+                            <li style="color: yellow; font-size: 25px; font-weight: bold;">Mas e se não fizermos
+                                absolutamente nada?</li>
+                            <p style="margin: 7px; border-bottom: 0;">
+                                O que aconteceria se não os tentássemos salvar?
+
+                                Bem, primeiro, perderíamos uma oportunidade incrível de aprender sobre a natureza. Não
+                                chegaríamos a experimentar a sua beleza, maravilha e mistério. Além disso, perderíamos a
+                                oportunidade de nos ligarmos a outros seres vivos.
+
+                                Em segundo lugar, arriscávamo-nos a perder algo muito maior do que qualquer criatura
+                                individual. O mundo natural proporciona-nos tudo o que precisamos para sobreviver.
+                                Dá-nos ar
+                                puro, água e solo; produtos frescos e medicamentos; belas paisagens e vida selvagem; e
+                                até
+                                inspiração e esperança. Sem este precioso ecossistema, a própria vida pode não existir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -1005,9 +1079,10 @@
             <div class="container_conteudo conteudo0" id="seleçao_mural" style="display:none;">
                 <div class="enunciado">
                     <div class="texto_enunciado">
-                        <div>Princioais espécies em extinção</div>
+                        <div>Principais espécies em extinção</div>
                     </div>
-                    <div class="saibamais"> <a href="https://www.todamateria.com.br/animais-em-extincao/">Descubra mais</a></div>
+                    <div class="saibamais"> <a href="https://www.todamateria.com.br/animais-em-extincao/">Descubra
+                            mais</a></div>
                 </div>
 
                 <div class="container_mural_especies">
@@ -1096,35 +1171,25 @@
 
 
 
-
             <div class="container_conteudo conteudo2" id="seleçao_grafico" style="display:none;">
-                <!-- <div class="enunciado">Compare as classes, e mensure sua dificuldade.</div> -->
+                <div class="enunciado">Indice de reconhecimento dos Habitats.</div>
                 <div class="analitics">
                     <div class="metrica facil">
-                        <div>10</div>
-                        <div class="nivel">Fácil</div>
+                        <div>+70%</div>
+                        <div class="nivel">Alto</div>
                     </div>
                     <div class="metrica medio">
-                        <div>11 a 15</div>
+                        <div>50%</div>
                         <div class="nivel">Médio</div>
                     </div>
                     <div class="metrica dificil">
-                        <div>16</div>
-                        <div class="nivel">Difícil</div>
+                        <div>20%</div>
+                        <div class="nivel">Baixo</div>
                     </div>
                 </div>
                 <div class="conteudo_grafico">
-                    <div class="container_select">Tipo de grafico:
-                        <select id="select_grafico" onchange="grafico()">
-                            <option value="barra">Quantitativo</option>
-                            <option value="percentual">Percentual</option>
-                        </select>
-                    </div>
                     <div class="container_grafico1" id="seleçao_barra">
-                        <canvas id="myChart1" class="canvas1"></canvas>
-                    </div>
-                    <div class="container_grafico2" id="seleçao_porcentagem">
-                        <div id='piechart' style="height:  auto; width: auto;  "></div>
+                        <canvas id="myChart" class="canvas"></canvas>
                     </div>
                 </div>
             </div>
@@ -1161,7 +1226,7 @@
         labels: labels1,
         datasets: [{
             label: 'Animais mais escolhidos',
-            backgroundColor: 'rgb(252, 245, 95)',
+            backgroundColor: 'rgb(244, 196, 48)',
             borderColor: 'rgb(0, 0, 0)',
             data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25, 50, 25, 33],
         },
@@ -1179,6 +1244,52 @@
         config1
     );
 
+</script>
+
+<script>
+
+   const labels = [
+        'Leão',
+        'Arara azul',
+        'Ariranha',
+        'Elefante Asiatico',
+        'Mico leão dourado',
+        'Tubarão baleia',
+        'Gorila das montanhas',
+        'Tartaruga de couro',
+        'Antilope seiga',
+        'Orangotango',
+        'Rinoceronte',
+        'Lobo guará',
+        'Tartaruga marinha',
+        'Macaco narigudo',
+        'Águia cinzenta',
+        'Onça pintada',
+        'Tigre siberiano',
+        'Jiboia amarela',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Habtats mais escolhidos',
+            backgroundColor: 'rgb(244, 196, 48)',
+            borderColor: 'rgb(0, 0, 0)',
+            data: [20, 70, 15, 75, 5, 10, 35, 40, 45, 50, 15, 60, 65, 30, 25, 50, 25, 33],
+        },
+        ]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
 </script>
 
 </html>

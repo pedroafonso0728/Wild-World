@@ -18,7 +18,7 @@ html {
 /* ----------------HOME---------------------------- */
 
 .pag1 {
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     /* border: solid 1px red; */
 }
@@ -38,6 +38,7 @@ html {
 .conteudo video {
     z-index: -100;
     width: 100%;
+
     /* border: solid 4px orange; */
 }
 
@@ -121,7 +122,7 @@ html {
 /* ---------------------SOBRE NÓS------------------------------- */
 
 .pag2 {
-    height: 80vh;
+    height: 100vh;
     border: solid 1px green;
     /* background-color: black; */
     background: linear-gradient(180deg, #FFFFFF 26.32%, rgba(68, 151, 17, 0.58) 71.33%);
@@ -423,7 +424,7 @@ html {
 
 .pag3 {
     text-align: center;
-    height: 95vh;
+    height: 100vh;
     /* background-color: rgba(37, 214, 37, 0.5); */
     border: solid 1px green;
 }
@@ -440,7 +441,7 @@ html {
 }
 
 .titulo_subtitulo2 h5 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* card */
@@ -449,8 +450,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 110%;
+    width: 98%;
+    height: 80%;
     /* border: solid 1px blue; */
 }
 
@@ -460,11 +461,10 @@ html {
     justify-content: center;
     flex-direction: column;
     border-radius: 15px;
-    width: 40%;
-    height: 65%;
-    /* background-color: #202020; */
+    width: 60%;
+    height: 70%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /* border: solid 1px rgb(90, 172, 90); */
+    border: solid 1px black;
 }
 
  .texto_card {
@@ -477,17 +477,19 @@ html {
 }
 
 .desc {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     width: 100%;
-    /* border: solid 1px yellow; */
+    height: 54%;
+    font-weight: bold;
+    border-bottom:  solid 1px rgb(0, 0, 0);
 } 
 
 .saiba_mais {
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 20%;
     flex-direction: column;
     /* border: solid 1px orangered; */
@@ -537,6 +539,7 @@ html {
 .slides input {
     /* ocultar as inputs */
     display: none;
+    /* border: solid 1px red; */
 }
 
 .slide {
@@ -630,7 +633,7 @@ html {
 
 .pag4 {
     text-align: center;
-    height: 95vh;
+    height: 100vh;
     /* background-color: black; */
     border: solid 1px green;
 }
@@ -647,7 +650,7 @@ html {
 }
 
 .titulo_subtitulo3 h5 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .video {
@@ -673,8 +676,8 @@ b h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 115%;
+    width: 80%;
+    height: 80%;
     /* border: solid 1px blueviolet; */
 }
 
@@ -682,14 +685,12 @@ b h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
     flex-direction: column;
     border-radius: 15px;
-    width: 40%;
-    height: 70%;
-    /* background-color: #202020; */
+    width: 60%;
+    height: 80%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /* border: solid 1px rgb(90, 172, 90); */
+    border: solid 1px black;
 }
 
  .texto_card2 {
@@ -702,11 +703,13 @@ b h5 {
 }
 
 .desc2 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
     width: 100%;
-    /* border: solid 1px white; */
+    height: 54%;
+    border-bottom:  solid 1px rgb(0, 0, 0);
 } 
 
 .saiba_mais2 {
@@ -757,5 +760,27 @@ b h5 {
     text-align: center;
     width: 99.8.5%;
     height: 25%;
+    background-color: #2a5120;
     border: solid 1px green;
 }
+
+.desenvolvedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px blue; */
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    /* border: solid 1px blue; */
+}
+
+
