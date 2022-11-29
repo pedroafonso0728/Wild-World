@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
 
 
-
 body {
     font-family: "alegreya", sans-serif;
     padding: 0;
@@ -525,6 +524,7 @@ a {
     /* border: red solid 1px; */
     cursor:pointer;
 }
+
 
 /* ------------------------------------------------ */
 

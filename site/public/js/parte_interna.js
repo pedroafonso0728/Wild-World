@@ -1,6 +1,100 @@
 
 
+
+
+
 // ------------------Painel------------------------------
+function leao1() {
+  var teste = leao2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+function arara1() {
+  var teste = arara2
+  teste.play()
+}
+
+
 
 function especiesext() {
   seleçao_especiesext.style.display = ""
@@ -31,7 +125,7 @@ function grafico() {
   seleçao_grafico.style.display = ""
 }
 
-// -------------Cards-------------------------------------  
+// -------------Cards-------------------------------------//
 
 var animal_anterior = 0;
 
@@ -47,19 +141,23 @@ function exibir_animal() {
     "rinoceronteNegro", "loboGuara", "tartarugaMarinha", "macacoNarigudo", "aguiaCinzenta", "oncaPintada",
     "tigre", "jiboiaAmarela"];
 
-
+  
   // animal_anterior >= 0 vai permitir que a escolha anterior da lista não apareça,
   // assim podendo fazer com que toda a escolha anterior seja (none).
   if (animal_anterior => 0) {
     lista_animais[animal_anterior].style.display = "none";
   }
-
+  
   for (var contador = 0; contador < 18; contador++) {
 
     if (select_animais.value == lista_escolha[contador]) {
       id_texto_boasVindas.style.display = "none";
+
       lista_animais[contador].style.display = "block";
       animal_anterior = contador;
+      // Na escolha de outro animal o contador vai parar de rodar pq no for esta < 18(barramento do for)
+      // caso ele escolha o numero 5, não tem pq continuar rodando até o 18, posso colocar para para zera até que chegue o animal
+      contador = 18;
     }
   }
 }
@@ -127,9 +225,6 @@ function cadastrar() {
 
   return false;
 }
-
-
-
 
 
 
