@@ -1,8 +1,4 @@
 
-
-
-
-
 // ------------------Painel------------------------------
 function leao1() {
   var teste = leao2
@@ -14,33 +10,33 @@ function arara1() {
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function ariranha1() {
+  var teste = ariranha2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function elefante1() {
+  var teste = elefante2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function mico1() {
+  var teste = mico2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function tubarao1() {
+  var teste = tubarao2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function gorila1() {
+  var teste = gorila2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function tartacouro1() {
+  var teste = tartacouro2
   teste.play()
 }
 
@@ -119,10 +115,12 @@ function preservacao() {
 }
 
 function grafico() {
+
   seleçao_especiesext.style.display = "none"
   seleçao_mural.style.display = "none"
   seleçao_preservacao.style.display = "none"
   seleçao_grafico.style.display = ""
+  
 }
 
 // -------------Cards-------------------------------------//
@@ -141,13 +139,13 @@ function exibir_animal() {
     "rinoceronteNegro", "loboGuara", "tartarugaMarinha", "macacoNarigudo", "aguiaCinzenta", "oncaPintada",
     "tigre", "jiboiaAmarela"];
 
-  
+
   // animal_anterior >= 0 vai permitir que a escolha anterior da lista não apareça,
   // assim podendo fazer com que toda a escolha anterior seja (none).
   if (animal_anterior => 0) {
     lista_animais[animal_anterior].style.display = "none";
   }
-  
+
   for (var contador = 0; contador < 18; contador++) {
 
     if (select_animais.value == lista_escolha[contador]) {
@@ -165,6 +163,7 @@ function exibir_animal() {
 var voto_valido = 'nao';
 
 function cadastrar() {
+obterHabitats();
   // vareavel global da global
   var id_usuario = sessionStorage.ID_USUARIO;
   // puxando o valor do select
@@ -215,7 +214,24 @@ function cadastrar() {
     console.log("resposta: ", resposta);
 
     if (resposta.ok) {
-      alert('Animal cadastrado!')
+
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+
+      Toast.fire({
+        icon: 'success',
+        title: 'Animal cadastrado!'
+      })
+
     } else {
       throw ("Houve um erro ao tentar realizar o cadastro!");
     }
@@ -233,8 +249,7 @@ b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
 let proximaAtualizacao;
 
-window.onload = obterDadosGrafico();
-
+window.onload = obterDadosGrafico(), obterHabitats();
 
 
 // O gráfico é construído com três funções:
@@ -292,9 +307,7 @@ function plotarGrafico(resposta) {
       borderColor: 'rgb(75, 192, 192)',
       backgroundColor: 'rgb(255, 215, 0)',
       tension: 0.1
-    },
-
-    {
+    }, {
       label: 'Arara azul',
       data: [],
       fill: false,
@@ -458,6 +471,13 @@ function plotarGrafico(resposta) {
   const config1 = {
     type: 'bar',
     data: dados,
+    options: {
+      // plugins:{
+      // legend: {
+      // display: false
+      // }
+      // }
+    }
   };
 
   // Adicionando gráfico criado em div na tela
@@ -489,66 +509,66 @@ function atualizarGrafico(dados, myChart) {
         if (voto_valido == 'nao') {
 
         } else {
-            // tirando e colocando valores no gráfico
-            voto_valido = 'nao'
+          // tirando e colocando valores no gráfico
+          voto_valido = 'nao'
 
-        dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-        dados.datasets[0].data.push(novoRegistro[0].leao); // incluir uma nova medida de umidade
+          dados.datasets[0].data.shift();  // apagar o primeiro de umidade
+          dados.datasets[0].data.push(novoRegistro[0].leao); // incluir uma nova medida de umidade
 
-        dados.datasets[1].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[1].data.push(novoRegistro[0].araraAzul); // incluir uma nova medida de temperatura
+          dados.datasets[1].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[1].data.push(novoRegistro[0].araraAzul); // incluir uma nova medida de temperatura
 
-        dados.datasets[2].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[2].data.push(novoRegistro[0].ariranha);
+          dados.datasets[2].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[2].data.push(novoRegistro[0].ariranha);
 
-        dados.datasets[3].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[3].data.push(novoRegistro[0].elefanteAsiatico);
+          dados.datasets[3].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[3].data.push(novoRegistro[0].elefanteAsiatico);
 
-        dados.datasets[4].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[4].data.push(novoRegistro[0].micoLeaoDourado);
+          dados.datasets[4].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[4].data.push(novoRegistro[0].micoLeaoDourado);
 
-        dados.datasets[5].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[5].data.push(novoRegistro[0].tubaraoBaleia);
+          dados.datasets[5].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[5].data.push(novoRegistro[0].tubaraoBaleia);
 
-        dados.datasets[6].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[6].data.push(novoRegistro[0].gorilaDaMontanha);
+          dados.datasets[6].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[6].data.push(novoRegistro[0].gorilaDaMontanha);
 
-        dados.datasets[7].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[7].data.push(novoRegistro[0].tartarugaDeCouro);
+          dados.datasets[7].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[7].data.push(novoRegistro[0].tartarugaDeCouro);
 
-        dados.datasets[8].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[8].data.push(novoRegistro[0].antilopeSeiga);
+          dados.datasets[8].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[8].data.push(novoRegistro[0].antilopeSeiga);
 
-        dados.datasets[9].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[9].data.push(novoRegistro[0].orangotango);
+          dados.datasets[9].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[9].data.push(novoRegistro[0].orangotango);
 
-        dados.datasets[10].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[10].data.push(novoRegistro[0].rinoceronteNegro);
+          dados.datasets[10].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[10].data.push(novoRegistro[0].rinoceronteNegro);
 
-        dados.datasets[11].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[11].data.push(novoRegistro[0].loboGuara);
+          dados.datasets[11].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[11].data.push(novoRegistro[0].loboGuara);
 
-        dados.datasets[12].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[12].data.push(novoRegistro[0].tartarugaMarinha);
+          dados.datasets[12].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[12].data.push(novoRegistro[0].tartarugaMarinha);
 
-        dados.datasets[13].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[13].data.push(novoRegistro[0].macacoNarigudo);
+          dados.datasets[13].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[13].data.push(novoRegistro[0].macacoNarigudo);
 
-        dados.datasets[14].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[14].data.push(novoRegistro[0].aguiaCinzenta);
+          dados.datasets[14].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[14].data.push(novoRegistro[0].aguiaCinzenta);
 
-        dados.datasets[15].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[15].data.push(novoRegistro[0].oncaPintada);
+          dados.datasets[15].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[15].data.push(novoRegistro[0].oncaPintada);
 
-        dados.datasets[16].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[16].data.push(novoRegistro[0].tigre);
+          dados.datasets[16].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[16].data.push(novoRegistro[0].tigre);
 
-        dados.datasets[17].data.shift();  // apagar o primeiro de temperatura
-        dados.datasets[17].data.push(novoRegistro[0].jiboiaAmarela);
-        myChart.update();
+          dados.datasets[17].data.shift();  // apagar o primeiro de temperatura
+          dados.datasets[17].data.push(novoRegistro[0].jiboiaAmarela);
+          myChart.update();
         }
 
-        
+
 
 
         // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
@@ -565,7 +585,123 @@ function atualizarGrafico(dados, myChart) {
     });
 }
 
+// --------graficos, tela grafico---------------------------------------------
 
+
+function obterHabitats() {
+
+  if (proximaAtualizacao != undefined) {
+    clearTimeout(proximaAtualizacao);
+  }
+
+  fetch(`/medidas/habitats`, { cache: 'no-store' }).then(function (response) {
+    if (response.ok) {
+      response.json().then(function (resposta) {
+        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+        resposta.reverse();
+
+        plotarGraficoHabitat(resposta);
+      });
+    } else {
+      console.error('Nenhum dado encontrado ou erro na API');
+    }
+  })
+    .catch(function (error) {
+      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    });
+}
+
+
+function plotarGraficoHabitat(resposta) {
+
+  var somaTotal = 0;
+  for (var i = 0; i < resposta.length; i++) {
+    somaTotal += resposta[i].quantidade;
+  }
+
+  var porcentagensHabitat = [];
+  for (var i = 0; i < resposta.length; i++) {
+    porcentagensHabitat.push((0.+resposta[i].quantidade / somaTotal * 100.00))
+    
+  }
+
+  const labels2 = [
+    resposta[5].habitat,
+    resposta[4].habitat,
+    resposta[3].habitat,
+    resposta[2].habitat,
+    resposta[1].habitat,
+    resposta[0].habitat
+
+  ];
+  
+  const data2 = {
+    labels: labels2,
+    datasets: [{
+      label: 'Porcentagem de habitats escolhidos',
+      backgroundColor: 'rgb(244, 196, 48)',
+      borderColor: 'rgb(0, 0, 0)',
+      data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
+      porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
+      porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
+    },
+    ]
+  };
+
+  const config2 = {
+    type: 'pie',
+    data: data2,
+    options: {}
+  };
+
+  const myChart2 = new Chart(
+    document.getElementById('myChart2'),
+    config2
+  );
+
+  const labels = [
+    resposta[5].habitat,
+    resposta[4].habitat,
+    resposta[3].habitat,
+    resposta[2].habitat,
+    resposta[1].habitat,
+    resposta[0].habitat
+  ];
+
+  resposta[5].habitat,
+    resposta[4].habitat,
+    resposta[3].habitat,
+    resposta[2].habitat,
+    resposta[1].habitat,
+    resposta[0].habitat
+
+  
+  
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Porcentagem de habitats escolhidos',
+      backgroundColor: 'rgb(244, 196, 48)',
+      borderColor: 'rgb(0, 0, 0)',
+      data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
+      porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
+      porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
+    },
+    ]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {}
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+
+}
 
       // leao.style.display = 'block'
       // araraAzul.style.display = 'block'
