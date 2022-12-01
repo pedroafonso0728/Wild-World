@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="./css/preservacao.css">
     <link rel="stylesheet" href="./css/especies.css">
 </head>
+<script>
 
+
+
+    if(sessionStorage.length <= 0){
+
+        window.location = "../login.html";
+
+    }else{
+
+        console.log(sessionStorage.NOME_USUARIO);
+
+        console.log(sessionStorage.ID_USUARIO);
+
+    }
+
+</script>
 <body>
     <div class="pg1">
         <div class="painel">
@@ -36,7 +52,7 @@
                 <br>
             </div>
             <div class="botao_sair">
-                <a href="index.html"><button onclick="limpar_Sessao()">Sair</button></a>
+                <button onclick="limparSessao()">Sair</button>
             </div>
         </div>
 
@@ -84,26 +100,40 @@
                         </div>
                     </div>
                 </div>
+               
 
                 <div class="container_grafico">
-                    <div class="grafico">
-                        <section>
-                            <span class="texto_grafico"><br>Confira os animais mais votados e descubra o preferido pelo
-                                publico!
-                            </span>
-                            <br><br>
-                            <canvas id="myChart1"></canvas>
-                        </section>
-                    </div>
-                    <div class="linha_centro">
-
+                    <div class="grafico_analitics">
+                            <div class="analitics">
+                                <div class="metrica facil">
+                                    <div>30</div>
+                                    <div class="nivel">Alto</div>
+                                </div>
+                                <div class="metrica medio">
+                                    <div>20</div>
+                                    <div class="nivel">Médio</div>
+                                </div>
+                                <div class="metrica dificil">
+                                    <div>5</div>
+                                    <div class="nivel">Baixo</div>
+                                </div>
+                            </div>
+                        <div class="grafico">
+                            <section class="grafico_especies">
+                                <span class="texto_grafico"><br>Confira os animais mais votados e descubra o preferido
+                                    pelo
+                                    publico!
+                                </span>
+                                <br><br>
+                                <canvas id="myChart1"></canvas>
+                            </section>
+                        </div>
                     </div>
 
 
                     <div class="texto_boasVindas" id="id_texto_boasVindas">
                         <div class="embrulhotexto">
                             <h1>Seja bem vindo(a), <span id="b_usuario"></span>!</h1>
-                            <br>
                             <p>Otima escolha ter se cadastrado e se tornado parte dessa grande familia!
                                 Aqui você pode escolher um animal e saber diversas coisas sobre ele e suas curiosidades,
                                 além de
@@ -122,8 +152,8 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal1">
-                                <img onclick="leao1()" src="./assets/leao-foto.jpg" alt="">
-                                <audio id="leao2" src="./sons/som-leao.mp3"></audio>
+                                <img src="./assets/leao-foto.jpg" alt="">
+                                <!-- <audio id="leao2" src="./sons/som-leao.mp3"></audio> -->
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -181,8 +211,7 @@
                                 <img src="./assets/fraco.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal2">
-                                <img onclick="arara1()" src="./assets/arara-foto.jpg" alt="">
-                                <audio id="arara2" src="./sons/som-arara.mp3"></audio>
+                                <img src="./assets/arara-foto.jpg" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -239,8 +268,7 @@
                                 <img src="./assets/fraco.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal3">
-                                <img onclick="ariranha1()" src="./assets/ariranha-foto.jpg" alt="">
-                                <audio id="ariranha2" src="./sons/som-ariranha.mp3"></audio>
+                                <img src="./assets/ariranha-foto.jpg" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -296,8 +324,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal4">
-                                <img onclick="elefante1()" src="./assets/elefante-foto.jfif" alt="">
-                                <audio id="elefante2" src="./sons/som-elefante.mp3"></audio>
+                                <img src="./assets/elefante-foto.jfif" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -355,8 +382,7 @@
                                 <img src="./assets/fraco.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal5">
-                                <img onclick="mico1()" src="./assets/mico-foto.jpg" alt="">
-                                <audio id="mico2" src="./sons/som-mico.mp3"></audio>
+                                <img src="./assets/mico-foto.jpg" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -413,8 +439,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal6">
-                                <img onclick="tubarao1()" src="./assets/tubaBaleia-foto.jpg" alt="">
-                                <audio id="tubarao2" src="./sons/som-tubarao.mp3"></audio>
+                                <img src="./assets/tubaBaleia-foto.jpg" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -471,8 +496,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal7">
-                                <img onclick="gorila1()" src="./assets/gorila-foto.jpg" alt="">
-                                <audio id="gorila2" src="./sons/som-gorila.mp3"></audio>
+                                <img src="./assets/gorila-foto.jpg" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -532,8 +556,7 @@
                                 <img src="./assets/forca.png" width="40px" alt="">
                             </div>
                             <div class="imagem_animal8">
-                                <img onclick="tartacouro1()" src="./assets/tartacouro-foto.jfif" alt="">
-                                <audio id="tartacouro2" src=""></audio>
+                                <img src="./assets/tartacouro-foto.jfif" alt="">
                             </div>
                             <div class="imagem_rapido">
                                 Velocidade:
@@ -1180,82 +1203,100 @@
                 <div class="container_mural_especies">
                     <div class="horizontal">
                         <div class="quadrado">
-                            <img class="img1" src="./assets/leao-foto.jpg">
+                            <img onclick="leao1()" class="img1" src="./assets/leao-foto.jpg">
                             <div>Leão</div>
+                            <audio id="leao2" src="./sons/som-leao.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img2" src="./assets/arara-foto.jpg">
+                            <img onclick="arara1()" class="img2" src="./assets/arara-foto.jpg">
                             <div>Arara azul</div>
+                            <audio id="arara2" src="./sons/som-arara.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img3" src="./assets/ariranha-foto.jpg">
+                            <img onclick="ariranha1()" class="img3" src="./assets/ariranha-foto.jpg">
                             <div>Ariranha</div>
+                            <audio id="ariranha2" src="./sons/som-ariranha.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img4" src="./assets/elefante-foto.jfif">
+                            <img onclick="elefante1()" class="img4" src="./assets/elefante-foto.jfif">
                             <div>Elefante asiatico</div>
+                            <audio id="elefante2" src="./sons/som-elefante.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img5" src="./assets/mico-foto.jpg">
+                            <img onclick="mico1()" class="img5" src="./assets/mico-foto.jpg">
                             <div>Mico leão dourado</div>
+                            <audio id="mico2" src="./sons/som-mico.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img6" src="./assets/tubaBaleia-foto.jpg">
+                            <img onclick="tubarao1()" class="img6" src="./assets/tubaBaleia-foto.jpg">
                             <div>Tubarão baleia</div>
+                            <audio id="tubarao2" src="./sons/som-tubarao.mp3"></audio>
                         </div>
                     </div>
                     <br><br>
                     <div class="horizontal">
                         <div class="quadrado">
-                            <img class="img7" src="./assets/gorila-foto.jpg">
+                            <img onclick="gorila1()" class="img7" src="./assets/gorila-foto.jpg">
                             <div>Gorila</div>
+                            <audio id="gorila2" src="./sons/som-gorila.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img8" src="./assets/tartacouro-foto.jfif">
+                            <img onclick="tartacouro1()" class="img8" src="./assets/tartacouro-foto.jfif">
                             <div>Tartaruga de couro</div>
+                            <audio id="tartacouro1" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img9" src="./assets/antilope_saiga-foto.jpg">
+                            <img onclick="antilope1()" class="img9" src="./assets/antilope_saiga-foto.jpg">
                             <div>Antilope seiga</div>
+                            <audio id="antilope2" src="./sons/antilope-som.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img10" src="./assets/orangotango.jpg">
+                            <img onclick="orangotango1()" class="img10" src="./assets/orangotango.jpg">
                             <div>Orangotango</div>
+                            <audio id="orangotango2" src="./sons/orangotango-som.mp3"></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img11" src="./assets/rinoceronte_negro.jpg">
+                            <img onclick="rino1()" class="img11" src="./assets/rinoceronte_negro.jpg">
                             <div>Rinoceronte negro</div>
+                            <audio id="rino2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img12" src="./assets/loboGuara-foto.jpg">
+                            <img onclick="lobo1()" class="img12" src="./assets/loboGuara-foto.jpg">
                             <div>Lobo guara</div>
+                            <audio id="lobo2" src=""></audio>
                         </div>
                     </div>
                     <br><br><br>
                     <div class="horizontal">
                         <div class="quadrado">
-                            <img class="img13" src="./assets/tartaruga.png">
+                            <img onclick="tartamarinha1()" class="img13" src="./assets/tartaruga.png">
                             <div>Tartaruga marinha</div>
+                            <audio id="tartamarinha2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img14" src="./assets/macaco-narigudo.jpg">
+                            <img onclick="macaconarigudo1()" class="img14" src="./assets/macaco-narigudo.jpg">
                             <div>Macaco narigudo</div>
+                            <audio id="macaconarigudo2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img15" src="./assets/aguiaCin-foto.jpg">
+                            <img onclick="aguia1()" class="img15" src="./assets/aguiaCin-foto.jpg">
                             <div>Águia cinzenta</div>
+                            <audio id="aguia2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img16" src="./assets/oncapintada-foto.jpg">
+                            <img onclick="onca1()" class="img16" src="./assets/oncapintada-foto.jpg">
                             <div>Onça pintada</div>
+                            <audio id="onca2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img17" src="./assets/tigre-foto.jpg">
+                            <img onclick="tigre1()" class="img17" src="./assets/tigre-foto.jpg">
                             <div>Tigre siberiano</div>
+                            <audio id="tigre2" src=""></audio>
                         </div>
                         <div class="quadrado">
-                            <img class="img18" src="./assets/jiboia-foto.jpg">
+                            <img onclick="jiboia1()" class="img18" src="./assets/jiboia-foto.jpg">
                             <div>Jiboia amarela</div>
+                            <audio id="jiboia2" src=""></audio>
                         </div>
                     </div>
                 </div>
@@ -1268,15 +1309,15 @@
                 <div class="enunciado">Indice de reconhecimento dos Habitats.</div>
                 <div class="analitics">
                     <div class="metrica facil">
-                        <div>+70%</div>
+                        <div>30%</div>
                         <div class="nivel">Alto</div>
                     </div>
                     <div class="metrica medio">
-                        <div>50%</div>
+                        <div>15%</div>
                         <div class="nivel">Médio</div>
                     </div>
                     <div class="metrica dificil">
-                        <div>20%</div>
+                        <div>5%</div>
                         <div class="nivel">Baixo</div>
                     </div>
                 </div>

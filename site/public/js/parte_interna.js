@@ -1,4 +1,20 @@
 
+// -----------Deslogar--------------------
+
+function limparSessao() {
+
+  // aguardar();
+
+  sessionStorage.clear();
+
+  // finalizarAguardar();
+
+  window.location = "../login.html";
+}
+// desloca
+
+
+
 // ------------------Painel------------------------------
 function leao1() {
   var teste = leao2
@@ -40,53 +56,53 @@ function tartacouro1() {
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function antilope1() {
+  var teste = antilope2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function orangotango1() {
+  var teste = orangotango2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function rino1() {
+  var teste = rino2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function lobo1() {
+  var teste = lobo2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function tartamarinha1() {
+  var teste = tartamarinha2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function macaconarigudo1() {
+  var teste = macaconarigudo2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function aguia1() {
+  var teste = aguia2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function onca1() {
+  var teste = onca2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function tigre1() {
+  var teste = tigre2
   teste.play()
 }
 
-function arara1() {
-  var teste = arara2
+function jiboia1() {
+  var teste = jiboia2
   teste.play()
 }
 
@@ -120,7 +136,7 @@ function grafico() {
   seleçao_mural.style.display = "none"
   seleçao_preservacao.style.display = "none"
   seleçao_grafico.style.display = ""
-  
+
 }
 
 // -------------Cards-------------------------------------//
@@ -163,7 +179,7 @@ function exibir_animal() {
 var voto_valido = 'nao';
 
 function cadastrar() {
-obterHabitats();
+  window.onload
   // vareavel global da global
   var id_usuario = sessionStorage.ID_USUARIO;
   // puxando o valor do select
@@ -306,126 +322,126 @@ function plotarGrafico(resposta) {
       fill: false,
       borderColor: 'rgb(75, 192, 192)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Arara azul',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Ariranha',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Elefante asiático',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Mico leão dourado',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Tubarao baleia',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'GorilaDa  das montanhas',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Tartaruga de couro',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Antilope seiga',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Orangotango',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Rinoceronte negro',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: ' Lobo guará',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Tartaruga marinha',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Macaco narigudo',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Águia cinzenta',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Onça pintada',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: ' Tigre siberiano',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }, {
       label: 'Jiboia amarela',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
       backgroundColor: 'rgb(255, 215, 0)',
-      tension: 0.1
+      // tension: 0.1
     }
     ]
   };
@@ -611,18 +627,20 @@ function obterHabitats() {
     });
 }
 
-
+// Fetch trás a resposta(dados do banco).
 function plotarGraficoHabitat(resposta) {
-
   var somaTotal = 0;
+  // Vai rodar até a quantidade de posições(5).
+  // For que junta todos os valores de cada posição e de cada habitat em uma só vareavel.
   for (var i = 0; i < resposta.length; i++) {
     somaTotal += resposta[i].quantidade;
+    // Vai devolver o total de cada habitat somado todos em uma unica vareavel.
   }
 
   var porcentagensHabitat = [];
   for (var i = 0; i < resposta.length; i++) {
-    porcentagensHabitat.push((0.+resposta[i].quantidade / somaTotal * 100.00))
-    
+    porcentagensHabitat.push(( resposta[i].quantidade / somaTotal * 100.00))
+
   }
 
   const labels2 = [
@@ -632,15 +650,15 @@ function plotarGraficoHabitat(resposta) {
     resposta[2].habitat,
     resposta[1].habitat,
     resposta[0].habitat
-
   ];
-  
+
   const data2 = {
     labels: labels2,
     datasets: [{
       label: 'Porcentagem de habitats escolhidos',
       backgroundColor: 'rgb(244, 196, 48)',
       borderColor: 'rgb(0, 0, 0)',
+      backgroundColor: ["yellow", "red", "green"],
       data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
       porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
       porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
@@ -675,14 +693,15 @@ function plotarGraficoHabitat(resposta) {
     resposta[1].habitat,
     resposta[0].habitat
 
-  
-  
+
+
   const data = {
     labels: labels,
     datasets: [{
       label: 'Porcentagem de habitats escolhidos',
       backgroundColor: 'rgb(244, 196, 48)',
       borderColor: 'rgb(0, 0, 0)',
+      backgroundColor: ["yellow", "red", "green"],
       data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
       porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
       porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
