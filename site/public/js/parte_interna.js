@@ -146,12 +146,12 @@ var animal_anterior = 0;
 function exibir_animal() {
 
   var lista_animais = [leao, araraAzul, ariranha, elefanteAsiatico, micoLeaoDourado,
-    tubaraoBaleia, gorilaDaMontanha, tartarugaDeCouro, antilopeSeiga, orangotango,
+    tubaraoBaleia, gorilaDaMontanha, tartarugaDeCouro, antilopeSaiga, orangotango,
     rinoceronteNegro, loboGuara, tartarugaMarinha, macacoNarigudo, aguiaCinzenta, oncaPintada,
     tigre, jiboiaAmarela];
 
   var lista_escolha = ["leao", "araraAzul", "ariranha", "elefanteAsiatico", "micoLeaoDourado",
-    "tubaraoBaleia", "gorilaDaMontanha", "tartarugaDeCouro", "antilopeSeiga", "orangotango",
+    "tubaraoBaleia", "gorilaDaMontanha", "tartarugaDeCouro", "antilopeSaiga", "orangotango",
     "rinoceronteNegro", "loboGuara", "tartarugaMarinha", "macacoNarigudo", "aguiaCinzenta", "oncaPintada",
     "tigre", "jiboiaAmarela"];
 
@@ -185,7 +185,7 @@ function cadastrar() {
   // puxando o valor do select
   var animal = select_animais.value;
 
-  if (animal == 'leao' || animal == 'antilopeSeiga' || animal == 'rinoceronteNegro') {
+  if (animal == 'leao' || animal == 'antilopeSaiga' || animal == 'rinoceronteNegro') {
     // savana
     var habitat = 'Savana'
     voto_valido = 'sim';
@@ -373,7 +373,7 @@ function plotarGrafico(resposta) {
       backgroundColor: 'rgb(255, 215, 0)',
       // tension: 0.1
     }, {
-      label: 'Antilope seiga',
+      label: 'Antilope saiga',
       data: [],
       fill: false,
       borderColor: 'rgb(255, 215, 0)',
@@ -553,7 +553,7 @@ function atualizarGrafico(dados, myChart) {
           dados.datasets[7].data.push(novoRegistro[0].tartarugaDeCouro);
 
           dados.datasets[8].data.shift();  // apagar o primeiro de temperatura
-          dados.datasets[8].data.push(novoRegistro[0].antilopeSeiga);
+          dados.datasets[8].data.push(novoRegistro[0].antilopeSaiga);
 
           dados.datasets[9].data.shift();  // apagar o primeiro de temperatura
           dados.datasets[9].data.push(novoRegistro[0].orangotango);
@@ -651,14 +651,14 @@ function plotarGraficoHabitat(resposta) {
     resposta[1].habitat,
     resposta[0].habitat
   ];
-
+   
   const data2 = {
     labels: labels2,
     datasets: [{
       label: 'Porcentagem de habitats escolhidos',
       backgroundColor: 'rgb(244, 196, 48)',
       borderColor: 'rgb(0, 0, 0)',
-      backgroundColor: ["yellow", "red", "green"],
+      backgroundColor: ["rgb(218, 165, 32)", "rgb(107, 142, 35)", "rgb(173, 216, 230)", "rgb(169, 169, 169)", "rgb(144, 238, 144)", "rgb(189, 183, 107)"],
       data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
       porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
       porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
@@ -701,7 +701,7 @@ function plotarGraficoHabitat(resposta) {
       label: 'Porcentagem de habitats escolhidos',
       backgroundColor: 'rgb(244, 196, 48)',
       borderColor: 'rgb(0, 0, 0)',
-      backgroundColor: ["yellow", "red", "green"],
+      backgroundColor: ["rgb(218, 165, 32)", "rgb(107, 142, 35)", "rgb(173, 216, 230)", "rgb(169, 169, 169)", "rgb(144, 238, 144)", "rgb(189, 183, 107)"],
       data: [porcentagensHabitat[5].toFixed(1), porcentagensHabitat[4].toFixed(1),
       porcentagensHabitat[3].toFixed(1), porcentagensHabitat[2].toFixed(1),
       porcentagensHabitat[1].toFixed(1), porcentagensHabitat[0].toFixed(1)],
